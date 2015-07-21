@@ -11,7 +11,8 @@ https://github.com/accesscode-2-2/unit-1-hw-week-0/blob/master/images/IMG_3082.P
 * You must use images (repo has an assets folder with images for you to use). [Here's a video on how to add images to your project](http://codewithchris.com/11-adding-and-displaying-images-in-your-app/)
 
 **HINT:**
-Any setup code you need to write can be written in the supplied `viewDidLoad:` method in the `ViewController` class.
+Any setup code you need to write can be written in the supplied.
+`viewDidLoad:` method in the `ViewController` class.
 
 **Bonus**
 * Hook up the segmented control to your controller. When the user selected different segments, update the label below to reflect the change  
