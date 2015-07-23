@@ -31,6 +31,7 @@
 @end
 
 @implementation ViewController
+@synthesize tweetsMediaFavorites;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,6 +42,10 @@
     
     //a border and rounded corners to the follow/following button
     self.followFollowingButton.layer.borderWidth = 1.5;
+    
+    //"twitter blue" did not use because it seemed too dark
+    //self.followFollowingButton.layer.borderColor =[UIColor colorWithRed:0.020 green:0.353 blue:0.808 alpha:1].CGColor;
+    
     self.followFollowingButton.layer.borderColor =[UIColor colorWithRed:0.424 green:0.710 blue:1 alpha:1].CGColor;
     self.followFollowingButton.layer.cornerRadius = 5.0;
     
@@ -51,7 +56,6 @@
     
     //color of follow button text
     self.followTextField.textColor = [UIColor colorWithRed:0.424 green:0.710 blue:1 alpha:1];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,7 +66,23 @@
 //make the "Tweets aren't loading right now" text change when button is pushed
 - (IBAction)tweetsMediaFavsAction:(UISegmentedControl *)sender {
     
-    //NSLog(@"button tapped");
+    if (tweetsMediaFavorites.selectedSegmentIndex == 0) {
+        
+        NSLog(@"tweets button tapped");
+        self.notLoadingText.text = @"Tweets aren't loading right now";
+        
+    } else if (tweetsMediaFavorites.selectedSegmentIndex == 1) {
+        
+        NSLog(@" media button tapped");
+        self.notLoadingText.text = @"Media isn't loading right now";
+        
+    }else if (tweetsMediaFavorites.selectedSegmentIndex == 2) {
+        
+        NSLog(@" favorites button tapped");
+        self.notLoadingText.text = @"Favorites aren't loading right now";
+        
+    }
+    
 }
 
 - (IBAction)followButtonTapped:(UIButton *)sender {
