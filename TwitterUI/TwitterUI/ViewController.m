@@ -20,6 +20,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *leftRoundbtn;
 @property (weak, nonatomic) IBOutlet UIButton *rightRoundBtn;
 @property (weak, nonatomic) IBOutlet UIButton *rightroundybutton;
+@property (weak, nonatomic) IBOutlet UIView *threebuttonsRound;
+@property (weak, nonatomic) IBOutlet UIImageView *homeImage;
+
+@property (weak, nonatomic) IBOutlet UILabel *textToChange;
 
 @property (weak, nonatomic) IBOutlet UIView *messagesButton;
 - (UIImage *)invertImage:(UIImage *)originalImage;
@@ -51,35 +55,45 @@
     
     [self.magnifyingGlass setImage: [self invertImage:[self.magnifyingGlass image]]];
     
-    UIBezierPath *shapePath = [UIBezierPath bezierPathWithRoundedRect:self.leftRoundbtn.bounds
-                                                    byRoundingCorners:UIRectCornerTopLeft | UIRectCornerBottomLeft
-                                                          cornerRadii:CGSizeMake(4, 4)];
+    self.threebuttonsRound.layer.cornerRadius = 5.0;
+    self.threebuttonsRound.layer.borderWidth = 1.0;
+    self.threebuttonsRound.layer.borderColor= [UIColor lightGrayColor].CGColor;
     
-    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
-    shapeLayer.frame = self.leftRoundbtn.bounds;
-    shapeLayer.path = shapePath.CGPath;
-    shapeLayer.fillColor = [UIColor clearColor].CGColor;
-    shapeLayer.strokeColor = [UIColor lightGrayColor].CGColor;
-    shapeLayer.lineWidth = 0.5;
-    [self.leftRoundbtn.layer addSublayer:shapeLayer];
-    
-
-    self.rightRoundBtn.layer.borderWidth = 1;
+    self.rightRoundBtn.layer.borderWidth = 1.0;
     self.rightRoundBtn.layer.borderColor = [UIColor lightGrayColor].CGColor;
     
-    UIBezierPath *shapePath2 = [UIBezierPath bezierPathWithRoundedRect:self.rightroundybutton.bounds
-                                                    byRoundingCorners:UIRectCornerTopRight | UIRectCornerBottomRight
-                                                          cornerRadii:CGSizeMake(4, 4)];
+   // [self setImage:self.homeImage.image];
     
-    CAShapeLayer *shapeLayer2 = [CAShapeLayer layer];
-    shapeLayer2.frame = self.rightroundybutton.bounds;
-    shapeLayer2.path = shapePath2.CGPath;
-    shapeLayer2.fillColor = [UIColor clearColor].CGColor;
-    shapeLayer2.strokeColor = [UIColor lightGrayColor].CGColor;
-    shapeLayer2.lineWidth = 0.5;
-    [self.rightroundybutton.layer addSublayer:shapeLayer2];
+    
+}
+- (IBAction)tweetsTapped:(UIButton *)sender {
+    self.textToChange.text = @"Tweets aren't loading right now";
+    [self.leftRoundbtn setBackgroundColor: [UIColor lightGrayColor]];
+    [self.leftRoundbtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.rightRoundBtn setBackgroundColor: [UIColor whiteColor]];
+    [self.rightRoundBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    [self.rightroundybutton setBackgroundColor: [UIColor whiteColor]];
+    [self.rightroundybutton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+}
 
-
+- (IBAction)mediaTapped:(UIButton *)sender {
+    self.textToChange.text = @"Media isn't loading right now";
+    [self.leftRoundbtn setBackgroundColor: [UIColor whiteColor]];
+    [self.leftRoundbtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    [self.rightRoundBtn setBackgroundColor: [UIColor lightGrayColor]];
+    [self.rightRoundBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.rightroundybutton setBackgroundColor: [UIColor whiteColor]];
+    [self.rightroundybutton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+}
+- (IBAction)favoritesTapped:(UIButton *)sender {
+    
+    self.textToChange.text = @"Favorites aren't loading right now";
+    [self.leftRoundbtn setBackgroundColor: [UIColor whiteColor]];
+    [self.leftRoundbtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    [self.rightRoundBtn setBackgroundColor: [UIColor whiteColor]];
+    [self.rightRoundBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    [self.rightroundybutton setBackgroundColor: [UIColor lightGrayColor]];
+    [self.rightroundybutton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 }
 
 - (UIImage *)invertImage:(UIImage *)originalImage
