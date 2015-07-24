@@ -20,13 +20,13 @@
 
 @property (weak, nonatomic) IBOutlet UIView *followButton;
 @property (weak, nonatomic) IBOutlet UILabel *followText;
-@property (weak, nonatomic) IBOutlet UIButton *leftRoundbtn;
-@property (weak, nonatomic) IBOutlet UIButton *rightRoundBtn;
-@property (weak, nonatomic) IBOutlet UIButton *rightroundybutton;
-@property (weak, nonatomic) IBOutlet UIView *threebuttonsRound;
 @property (weak, nonatomic) IBOutlet UIImageView *homeImage;
 @property (weak, nonatomic) IBOutlet UILabel *decriptionTest;
 @property (weak, nonatomic) IBOutlet UIImageView *followImage;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+
+- (IBAction)segmentedControlAction:(id)sender;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *textToChange;
 
@@ -35,7 +35,7 @@
 @end
 
 @implementation ViewController
-
+//@synthesize segmentedControl;
 - (void)viewDidLoad {
     
     
@@ -68,46 +68,74 @@
     
     [self.magnifyingGlass setImage: [self invertImage:[self.magnifyingGlass image]]];
     
-    self.threebuttonsRound.layer.cornerRadius = 5.0;
-    self.threebuttonsRound.layer.borderWidth = 1.0;
-    self.threebuttonsRound.layer.borderColor= [UIColor lightGrayColor].CGColor;
-    
-    self.rightRoundBtn.layer.borderWidth = 1.0;
-    self.rightRoundBtn.layer.borderColor = [UIColor lightGrayColor].CGColor;
+
     
    // [self setImage:self.homeImage.image];
     
     
 }
-- (IBAction)tweetsTapped:(UIButton *)sender {
-    self.textToChange.text = @"Tweets aren't loading right now";
-    [self.leftRoundbtn setBackgroundColor: [UIColor lightGrayColor]];
-    [self.leftRoundbtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self.rightRoundBtn setBackgroundColor: [UIColor whiteColor]];
-    [self.rightRoundBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
-    [self.rightroundybutton setBackgroundColor: [UIColor whiteColor]];
-    [self.rightroundybutton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
-}
 
-- (IBAction)mediaTapped:(UIButton *)sender {
-    self.textToChange.text = @"Media isn't loading right now";
-    [self.leftRoundbtn setBackgroundColor: [UIColor whiteColor]];
-    [self.leftRoundbtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
-    [self.rightRoundBtn setBackgroundColor: [UIColor lightGrayColor]];
-    [self.rightRoundBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self.rightroundybutton setBackgroundColor: [UIColor whiteColor]];
-    [self.rightroundybutton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
-}
-- (IBAction)favoritesTapped:(UIButton *)sender {
-    
-    self.textToChange.text = @"Favorites aren't loading right now";
-    [self.leftRoundbtn setBackgroundColor: [UIColor whiteColor]];
-    [self.leftRoundbtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
-    [self.rightRoundBtn setBackgroundColor: [UIColor whiteColor]];
-    [self.rightRoundBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
-    [self.rightroundybutton setBackgroundColor: [UIColor lightGrayColor]];
-    [self.rightroundybutton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-}
+//- (IBAction)TweetsTapped:(UISegmentedControl *)sender {
+//    if(segmentedControl.selectedSegmentIndex == 0)            // Checking which segment is selected using the segment index value
+//        
+//    {
+//        
+//        self.textToChange.text = @"Tweets aren't loading right now";
+//        
+//    }
+//    
+//    else
+//        
+//        if(segmentedControl.selectedSegmentIndex == 1)
+//            
+//        {
+//            
+//            self.textToChange.text = @"Media isn't loading right now";
+//            
+//        }
+//    
+//        else
+//            
+//            if(segmentedControl.selectedSegmentIndex == 2)
+//                
+//            {
+//                
+//                self.textToChange.text = @"Favorites aren't loading right now";
+//                
+//            }
+//    
+//}
+
+
+//- (IBAction)tweetsTapped:(UIButton *)sender {
+//    self.textToChange.text = @"Tweets aren't loading right now";
+//    [self.leftRoundbtn setBackgroundColor: [UIColor lightGrayColor]];
+//    [self.leftRoundbtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    [self.rightRoundBtn setBackgroundColor: [UIColor whiteColor]];
+//    [self.rightRoundBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+//    [self.rightroundybutton setBackgroundColor: [UIColor whiteColor]];
+//    [self.rightroundybutton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+//}
+//
+//- (IBAction)mediaTapped:(UIButton *)sender {
+//    self.textToChange.text = @"Media isn't loading right now";
+//    [self.leftRoundbtn setBackgroundColor: [UIColor whiteColor]];
+//    [self.leftRoundbtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+//    [self.rightRoundBtn setBackgroundColor: [UIColor lightGrayColor]];
+//    [self.rightRoundBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    [self.rightroundybutton setBackgroundColor: [UIColor whiteColor]];
+//    [self.rightroundybutton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+//}
+//- (IBAction)favoritesTapped:(UIButton *)sender {
+//    
+//    self.textToChange.text = @"Favorites aren't loading right now";
+//    [self.leftRoundbtn setBackgroundColor: [UIColor whiteColor]];
+//    [self.leftRoundbtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+//    [self.rightRoundBtn setBackgroundColor: [UIColor whiteColor]];
+//    [self.rightRoundBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+//    [self.rightroundybutton setBackgroundColor: [UIColor lightGrayColor]];
+//    [self.rightroundybutton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//}
 - (IBAction)followTapped:(UIButton *)sender {
     
     //change color of background of view
@@ -163,4 +191,33 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)segmentedControlAction:(id)sender {
+    if(self.segmentedControl.selectedSegmentIndex == 0)            // Checking which segment is selected using the segment index value
+        
+    {
+        
+        self.textToChange.text = @"Tweets aren't loading right now";
+        
+    }
+    
+    else
+        
+        if(self.segmentedControl.selectedSegmentIndex == 1)
+            
+        {
+            
+            self.textToChange.text = @"Media isn't loading right now";
+            
+        }
+    
+        else
+            
+            if(self.segmentedControl.selectedSegmentIndex == 2)
+                
+            {
+                
+                self.textToChange.text = @"Favorites aren't loading right now";
+                
+            }
+}
 @end
