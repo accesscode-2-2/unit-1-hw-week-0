@@ -74,6 +74,11 @@
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="therock2" translatesAutoresizingMaskIntoConstraints="NO" id="v48-sr-fsi">
                                                 <rect key="frame" x="4" y="4" width="82" height="82"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -104,6 +109,9 @@
                                                     <segment title="Favorites"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="segmentControlValueDidChange:" destination="vXZ-lx-hvc" eventType="valueChanged" id="3Wb-rM-xEy"/>
+                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                         <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -139,7 +147,7 @@
                                                 </state>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="FJ2-Wb-3DD" firstAttribute="leading" secondItem="0EX-dP-T7k" secondAttribute="leading" constant="8" id="Axe-Iu-RbH"/>
                                             <constraint firstAttribute="centerY" secondItem="FJ2-Wb-3DD" secondAttribute="centerY" id="OYx-Iu-DgQ"/>
@@ -150,7 +158,7 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                                <real key="value" value="0.5"/>
+                                                <real key="value" value="0.75"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="5"/>
@@ -164,7 +172,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                                        <real key="value" value="0.5"/>
+                                                        <real key="value" value="0.75"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="5"/>
@@ -245,7 +253,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstItem="1XE-BX-rAp" firstAttribute="centerY" secondItem="QME-Kz-vuX" secondAttribute="centerY" id="116-ei-VqM"/>
                                                             <constraint firstItem="1XE-BX-rAp" firstAttribute="leading" secondItem="QME-Kz-vuX" secondAttribute="trailing" constant="4" id="3NH-rP-av5"/>
@@ -288,7 +296,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="N6u-DU-tss" firstAttribute="centerY" secondItem="k4J-nU-mJr" secondAttribute="centerY" id="MC0-L1-Tj0"/>
                                                     <constraint firstItem="k4J-nU-mJr" firstAttribute="leading" secondItem="N6u-DU-tss" secondAttribute="trailing" constant="4" id="b0M-gC-SeA"/>
@@ -351,7 +359,7 @@
                                                         <rect key="frame" x="80" y="13" width="15" height="15"/>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="RRQ-Jd-va0" secondAttribute="bottom" id="31Z-4Z-lnR"/>
                                                     <constraint firstAttribute="centerY" secondItem="EoW-wL-tdW" secondAttribute="centerY" id="49j-RO-EOG"/>
@@ -391,7 +399,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="x2l-z2-KIz" firstAttribute="top" secondItem="WfI-5D-JR0" secondAttribute="bottom" constant="4" id="0kd-Ve-Nf2"/>
                                     <constraint firstItem="oPp-bU-68R" firstAttribute="top" secondItem="8Ra-WQ-j8s" secondAttribute="bottom" constant="4" id="2B0-dF-JuR"/>
@@ -632,6 +640,8 @@
                     </view>
                     <connections>
                         <outlet property="followBar" destination="8jG-Ji-MY9" id="4IY-1C-6ZS"/>
+                        <outlet property="labelTweets" destination="GnF-k0-N6a" id="GRf-uq-scz"/>
+                        <outlet property="segmentedControl" destination="unn-bp-F0i" id="Zsn-SC-hAb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

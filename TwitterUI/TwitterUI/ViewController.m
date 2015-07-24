@@ -7,22 +7,26 @@
 //
 
 #import "ViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIView *followBar;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+@property (weak, nonatomic) IBOutlet UILabel *labelTweets;
 
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
+    self.followBar.layer.borderColor = [UIColor colorWithRed: 0.34f green: 0.67f blue: 0.92f alpha: 1.0f].CGColor;
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
+- (IBAction)segmentControlValueDidChange:(UISegmentedControl *)sender {
+    
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
