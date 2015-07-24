@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+//#import <QuartzCore/QuartzCore.h>
+
 
 @interface ViewController ()
+//@property (weak, nonatomic) IBOutlet UIView *curvedEdges;
 
 @end
 
@@ -17,6 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+   
+   // self.curvedEdges.layer.cornerRadius = 10.0;
+
+    
 }
 
 - (void)didReceiveMemoryWarning {
