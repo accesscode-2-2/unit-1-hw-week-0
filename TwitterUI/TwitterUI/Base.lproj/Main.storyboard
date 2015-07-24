@@ -386,7 +386,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actor. Wrestler. Hero. People's Champion. Jamaal's buddy and workout partner. " lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8Ra-WQ-j8s">
-                                        <rect key="frame" x="16" y="83" width="484" height="34"/>
+                                        <rect key="frame" x="16" y="83" width="564" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -471,7 +471,7 @@
                                     <constraint firstItem="wdZ-KX-MfW" firstAttribute="leading" secondItem="AnP-1f-3t3" secondAttribute="trailing" constant="4" id="apd-dI-eLY"/>
                                     <constraint firstItem="x2l-z2-KIz" firstAttribute="top" secondItem="TyL-pk-mSr" secondAttribute="bottom" constant="8" id="awV-BR-55o"/>
                                     <constraint firstItem="A3Y-3Y-h7v" firstAttribute="top" secondItem="8jG-Ji-MY9" secondAttribute="top" constant="20" symbolic="YES" id="dHT-N2-df9"/>
-                                    <constraint firstAttribute="trailing" secondItem="8Ra-WQ-j8s" secondAttribute="trailing" constant="100" id="eNa-rQ-Pba"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Ra-WQ-j8s" secondAttribute="trailing" constant="20" id="eNa-rQ-Pba"/>
                                     <constraint firstItem="Er9-DV-zYd" firstAttribute="top" secondItem="8jG-Ji-MY9" secondAttribute="top" constant="16" id="fCc-qO-joj"/>
                                     <constraint firstItem="ZBD-fM-YHQ" firstAttribute="centerY" secondItem="ANE-pi-R5m" secondAttribute="centerY" constant="1" id="fgg-vx-wSg"/>
                                     <constraint firstItem="Er9-DV-zYd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8jG-Ji-MY9" secondAttribute="top" constant="16" id="g7a-Qh-Cgk"/>
@@ -522,6 +522,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="followBar" destination="8jG-Ji-MY9" id="4IY-1C-6ZS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
