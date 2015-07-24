@@ -582,6 +582,7 @@
                         <outlet property="numberOfFollowersField" destination="KcX-ga-hbC" id="BuP-p3-cMp"/>
                         <outlet property="profilePic" destination="STS-Qa-QIg" id="XXL-VG-uVT"/>
                         <outlet property="profilePicFrame" destination="x8t-re-UL1" id="I26-qm-g2Z"/>
+                        <outlet property="topPhotoView" destination="869-lY-h3r" id="MTh-NW-VgC"/>
                         <outlet property="tweetsMediaFavorites" destination="m3N-oB-Ocv" id="2fX-pb-asB"/>
                     </connections>
                 </viewController>

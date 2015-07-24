@@ -10,6 +10,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *topPhotoView;
+
 @property (weak, nonatomic) IBOutlet UIView *profilePicFrame;
 @property (weak, nonatomic) IBOutlet UIImageView *profilePic;
 @property (weak, nonatomic) IBOutlet UIView *followFollowingButton;
@@ -31,14 +33,13 @@
 @end
 
 @implementation ViewController
-@synthesize tweetsMediaFavorites;
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
+    [self setupProfilePicture];
     //rounded corners for the profile pic
-    self.profilePicFrame.layer.cornerRadius = 5.0;
-    self.profilePic.layer.cornerRadius = 5.0;
     
     //a border and rounded corners to the follow/following button
     self.followFollowingButton.layer.borderWidth = 1.5;
@@ -56,6 +57,23 @@
     
     //color of follow button text
     self.followTextField.textColor = [UIColor colorWithRed:0.424 green:0.710 blue:1 alpha:1];
+    
+    //change top image
+    self.topPhotoView.image = [self imageFromURLString:@"http://uppermerionfarmersmarket.org/umfm/wp-content/uploads/2014/06/strawberry1.jpg"];
+    //change profile pic
+    self.profilePic.image = [self imageFromURLString:@"http://chan.catiewayne.com/c/src/138577281099.jpg"];
+}
+
+- (void)setupProfilePicture {
+    self.profilePicFrame.layer.cornerRadius = 5.0;
+    self.profilePic.layer.cornerRadius = 5.0;
+}
+
+-(UIImage *)imageFromURLString:(NSString *)string{
+    NSURL *url = [NSURL URLWithString:string];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    UIImage *image = [UIImage imageWithData:data];
+    return image;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,17 +84,17 @@
 //make the "Tweets aren't loading right now" text change when button is pushed
 - (IBAction)tweetsMediaFavsAction:(UISegmentedControl *)sender {
     
-    if (tweetsMediaFavorites.selectedSegmentIndex == 0) {
+    if (self.tweetsMediaFavorites.selectedSegmentIndex == 0) {
         
         NSLog(@"tweets button tapped");
         self.notLoadingText.text = @"Tweets aren't loading right now";
         
-    } else if (tweetsMediaFavorites.selectedSegmentIndex == 1) {
+    } else if (self.tweetsMediaFavorites.selectedSegmentIndex == 1) {
         
         NSLog(@" media button tapped");
         self.notLoadingText.text = @"Media isn't loading right now";
         
-    }else if (tweetsMediaFavorites.selectedSegmentIndex == 2) {
+    }else if (self.tweetsMediaFavorites.selectedSegmentIndex == 2) {
         
         NSLog(@" favorites button tapped");
         self.notLoadingText.text = @"Favorites aren't loading right now";
