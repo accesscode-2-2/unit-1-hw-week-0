@@ -11,6 +11,9 @@
 #import <CoreImage/CoreImage.h>
 
 @interface ViewController ()
+
+@property BOOL following;
+
 @property (weak, nonatomic) IBOutlet UIImageView *composeImage;
 @property (weak, nonatomic) IBOutlet UIImageView *magnifyingGlass;
 @property (weak, nonatomic) IBOutlet UIView *profilePicture;
@@ -22,6 +25,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *rightroundybutton;
 @property (weak, nonatomic) IBOutlet UIView *threebuttonsRound;
 @property (weak, nonatomic) IBOutlet UIImageView *homeImage;
+@property (weak, nonatomic) IBOutlet UILabel *decriptionTest;
+@property (weak, nonatomic) IBOutlet UIImageView *followImage;
 
 @property (weak, nonatomic) IBOutlet UILabel *textToChange;
 
@@ -36,7 +41,15 @@
     
     
     [super viewDidLoad];
+    self.following = NO;
+    self.followImage.image = [self.followImage.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    [self.followImage setTintColor:[UIColor colorWithRed:85.0/255.0 green:172.0/255.0 blue:238.0/255.0 alpha:1]];
+    self.homeImage.image = [self.homeImage.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    [self.homeImage setTintColor:[UIColor colorWithRed:85.0/255.0 green:172.0/255.0 blue:238.0/255.0 alpha:1]];
+    
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.decriptionTest.adjustsFontSizeToFitWidth = YES;
     self.followText.textColor =[UIColor colorWithRed:85.0/255.0 green:172.0/255.0 blue:238.0/255.0 alpha:1];
     
     self.messagesButton.layer.cornerRadius = 5.0;
@@ -94,6 +107,33 @@
     [self.rightRoundBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     [self.rightroundybutton setBackgroundColor: [UIColor lightGrayColor]];
     [self.rightroundybutton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+}
+- (IBAction)followTapped:(UIButton *)sender {
+    
+    //change color of background of view
+//    NSLog(@"button tapped");
+    if (self.following) {
+        self.followButton.backgroundColor = [UIColor whiteColor];
+        self.followText.textColor = [UIColor colorWithRed:85.0/255.0 green:172.0/255.0 blue:238.0/255.0 alpha:1];
+        
+        self.followImage.image = [self.followImage.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        [self.followImage setTintColor:[UIColor colorWithRed:85.0/255.0 green:172.0/255.0 blue:238.0/255.0 alpha:1]];
+        self.followText.text=@"Follow";
+        
+        self.following = NO;
+        
+    }
+    else {
+    self.followButton.backgroundColor = [UIColor colorWithRed:85.0/255.0 green:172.0/255.0 blue:238.0/255.0 alpha:1];
+    self.followText.textColor = [UIColor whiteColor];
+        self.followText.text=@"Following";
+        self.followImage.image = [self.followImage.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        [self.followImage setTintColor:[UIColor whiteColor]];
+        
+        
+        
+        self.following = YES;
+    }
 }
 
 - (UIImage *)invertImage:(UIImage *)originalImage
