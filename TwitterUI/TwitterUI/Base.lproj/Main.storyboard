@@ -25,7 +25,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                         <color key="backgroundColor" red="1" green="0.76353266959999999" blue="0.86683591250000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="140" id="mFi-R5-CHw"/>
+                                            <constraint firstAttribute="height" constant="140" id="mFi-R5-CHw">
+                                                <variation key="widthClass=compact" constant="100"/>
+                                            </constraint>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -570,7 +572,9 @@
                                     <constraint firstItem="u7i-bE-jkJ" firstAttribute="top" secondItem="fKp-7A-JRX" secondAttribute="bottom" id="JW2-57-17f"/>
                                     <constraint firstItem="uI7-yI-VSR" firstAttribute="leading" secondItem="yzv-yl-Txr" secondAttribute="leading" id="Js1-VS-8N9"/>
                                     <constraint firstAttribute="trailing" secondItem="jaN-F3-WwO" secondAttribute="trailing" id="Khw-p8-gTD"/>
-                                    <constraint firstItem="v9D-Hv-Asg" firstAttribute="top" secondItem="yzv-yl-Txr" secondAttribute="top" constant="110" id="Kos-3f-eN7"/>
+                                    <constraint firstItem="v9D-Hv-Asg" firstAttribute="top" secondItem="yzv-yl-Txr" secondAttribute="top" constant="110" id="Kos-3f-eN7">
+                                        <variation key="widthClass=compact" constant="70"/>
+                                    </constraint>
                                     <constraint firstItem="qyh-lT-nX3" firstAttribute="leading" secondItem="B5j-Os-IzX" secondAttribute="trailing" constant="16" id="OCX-Wk-8Ya"/>
                                     <constraint firstItem="nZO-rn-fnE" firstAttribute="leading" secondItem="yzv-yl-Txr" secondAttribute="leading" id="Ojj-9j-93D">
                                         <variation key="widthClass=compact" constant="5"/>
