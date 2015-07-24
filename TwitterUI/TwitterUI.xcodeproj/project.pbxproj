@@ -14,6 +14,7 @@
 		8DD2E0141B5C7F3600C27DE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2E0131B5C7F3600C27DE1 /* Images.xcassets */; };
 		8DD2E0171B5C7F3600C27DE1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2E0151B5C7F3600C27DE1 /* LaunchScreen.xib */; };
 		8DD2E0231B5C7F3600C27DE1 /* TwitterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2E0221B5C7F3600C27DE1 /* TwitterUITests.m */; };
+		EB58B91E1B5F2B9A0010705F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB58B91D1B5F2B9A0010705F /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		8DD2E01C1B5C7F3600C27DE1 /* TwitterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD2E0211B5C7F3600C27DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DD2E0221B5C7F3600C27DE1 /* TwitterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterUITests.m; sourceTree = "<group>"; };
+		EB58B91D1B5F2B9A0010705F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB58B91E1B5F2B9A0010705F /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		8DD2DFFA1B5C7F3600C27DE1 = {
 			isa = PBXGroup;
 			children = (
+				EB58B91D1B5F2B9A0010705F /* QuartzCore.framework */,
 				8DD2E0051B5C7F3600C27DE1 /* TwitterUI */,
 				8DD2E01F1B5C7F3600C27DE1 /* TwitterUITests */,
 				8DD2E0041B5C7F3600C27DE1 /* Products */,
@@ -416,6 +420,7 @@
 				8DD2E0281B5C7F3600C27DE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DD2E0291B5C7F3600C27DE1 /* Build configuration list for PBXNativeTarget "TwitterUITests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +429,7 @@
 				8DD2E02B1B5C7F3600C27DE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
