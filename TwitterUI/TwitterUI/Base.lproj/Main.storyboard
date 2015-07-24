@@ -124,6 +124,9 @@
                                             <segment title="Media"/>
                                             <segment title="Favorites"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="segaction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="1k5-C6-CBt"/>
+                                        </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="39 FOLLOWING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPK-Pb-BFA">
                                         <rect key="frame" x="26" y="274" width="140" height="26"/>
@@ -283,6 +286,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="clearView" destination="uLu-cw-7b8" id="daN-Og-qu6"/>
+                        <outlet property="segview" destination="69B-49-vFk" id="tZ9-vz-N5b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
