@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0CBD311B60C8A800FD6B6F /* feature-icon-location.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD301B60C8A800FD6B6F /* feature-icon-location.png */; };
+		1D0CBD331B60D92E00FD6B6F /* forest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD321B60D92E00FD6B6F /* forest.jpg */; };
+		1D0CBD351B60DA2D00FD6B6F /* Screen-shot-2011-10-17-at-9.32.20-AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD341B60DA2D00FD6B6F /* Screen-shot-2011-10-17-at-9.32.20-AM.png */; };
+		1D0CBD371B60DAED00FD6B6F /* 256px-Email_Shiny_Icon.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD361B60DAED00FD6B6F /* 256px-Email_Shiny_Icon.svg.png */; };
+		1D0CBD391B60DB7A00FD6B6F /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD381B60DB7A00FD6B6F /* 9.png */; };
+		1D0CBD3B1B60DBFD00FD6B6F /* Very-Basic-Search-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD3A1B60DBFD00FD6B6F /* Very-Basic-Search-icon.png */; };
+		1D0CBD3D1B60DC4900FD6B6F /* google_web_search.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD3C1B60DC4900FD6B6F /* google_web_search.png */; };
+		1D0CBD3F1B60DCC500FD6B6F /* search-47.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD3E1B60DCC500FD6B6F /* search-47.png */; };
+		1D0CBD411B60DD2500FD6B6F /* tweetdeck-write.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD401B60DD2500FD6B6F /* tweetdeck-write.jpg */; };
+		1D0CBD451B60E02E00FD6B6F /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD441B60E02E00FD6B6F /* back.png */; };
+		1D0CBD471B60E36B00FD6B6F /* twitter-egg-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD461B60E36B00FD6B6F /* twitter-egg-icon.jpg */; };
+		1D0CBD531B60E5C100FD6B6F /* accounts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD481B60E5C100FD6B6F /* accounts@2x.png */; };
+		1D0CBD541B60E5C100FD6B6F /* compose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD491B60E5C100FD6B6F /* compose@2x.png */; };
+		1D0CBD551B60E5C100FD6B6F /* cover@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD4A1B60E5C100FD6B6F /* cover@2x.jpeg */; };
+		1D0CBD561B60E5C100FD6B6F /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD4B1B60E5C100FD6B6F /* home@2x.png */; };
+		1D0CBD571B60E5C100FD6B6F /* location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD4C1B60E5C100FD6B6F /* location@2x.png */; };
+		1D0CBD581B60E5C100FD6B6F /* messages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD4D1B60E5C100FD6B6F /* messages@2x.png */; };
+		1D0CBD591B60E5C100FD6B6F /* notifications@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD4E1B60E5C100FD6B6F /* notifications@2x.png */; };
+		1D0CBD5A1B60E5C100FD6B6F /* profile@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD4F1B60E5C100FD6B6F /* profile@2x.jpeg */; };
+		1D0CBD5B1B60E5C100FD6B6F /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD501B60E5C100FD6B6F /* search@2x.png */; };
+		1D0CBD5C1B60E5C100FD6B6F /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD511B60E5C100FD6B6F /* settings@2x.png */; };
+		1D0CBD5D1B60E5C100FD6B6F /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0CBD521B60E5C100FD6B6F /* user@2x.png */; };
 		8DD2E0091B5C7F3600C27DE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2E0081B5C7F3600C27DE1 /* main.m */; };
 		8DD2E00C1B5C7F3600C27DE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2E00B1B5C7F3600C27DE1 /* AppDelegate.m */; };
 		8DD2E00F1B5C7F3600C27DE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2E00E1B5C7F3600C27DE1 /* ViewController.m */; };
@@ -27,6 +49,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D0CBD301B60C8A800FD6B6F /* feature-icon-location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feature-icon-location.png"; sourceTree = "<group>"; };
+		1D0CBD321B60D92E00FD6B6F /* forest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = forest.jpg; sourceTree = "<group>"; };
+		1D0CBD341B60DA2D00FD6B6F /* Screen-shot-2011-10-17-at-9.32.20-AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen-shot-2011-10-17-at-9.32.20-AM.png"; sourceTree = "<group>"; };
+		1D0CBD361B60DAED00FD6B6F /* 256px-Email_Shiny_Icon.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "256px-Email_Shiny_Icon.svg.png"; sourceTree = "<group>"; };
+		1D0CBD381B60DB7A00FD6B6F /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		1D0CBD3A1B60DBFD00FD6B6F /* Very-Basic-Search-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Very-Basic-Search-icon.png"; sourceTree = "<group>"; };
+		1D0CBD3C1B60DC4900FD6B6F /* google_web_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google_web_search.png; sourceTree = "<group>"; };
+		1D0CBD3E1B60DCC500FD6B6F /* search-47.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-47.png"; sourceTree = "<group>"; };
+		1D0CBD401B60DD2500FD6B6F /* tweetdeck-write.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tweetdeck-write.jpg"; sourceTree = "<group>"; };
+		1D0CBD441B60E02E00FD6B6F /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		1D0CBD461B60E36B00FD6B6F /* twitter-egg-icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "twitter-egg-icon.jpg"; sourceTree = "<group>"; };
+		1D0CBD481B60E5C100FD6B6F /* accounts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accounts@2x.png"; sourceTree = "<group>"; };
+		1D0CBD491B60E5C100FD6B6F /* compose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compose@2x.png"; sourceTree = "<group>"; };
+		1D0CBD4A1B60E5C100FD6B6F /* cover@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cover@2x.jpeg"; sourceTree = "<group>"; };
+		1D0CBD4B1B60E5C100FD6B6F /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
+		1D0CBD4C1B60E5C100FD6B6F /* location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location@2x.png"; sourceTree = "<group>"; };
+		1D0CBD4D1B60E5C100FD6B6F /* messages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messages@2x.png"; sourceTree = "<group>"; };
+		1D0CBD4E1B60E5C100FD6B6F /* notifications@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notifications@2x.png"; sourceTree = "<group>"; };
+		1D0CBD4F1B60E5C100FD6B6F /* profile@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "profile@2x.jpeg"; sourceTree = "<group>"; };
+		1D0CBD501B60E5C100FD6B6F /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		1D0CBD511B60E5C100FD6B6F /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		1D0CBD521B60E5C100FD6B6F /* user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user@2x.png"; sourceTree = "<group>"; };
 		8DD2E0031B5C7F3600C27DE1 /* TwitterUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD2E0071B5C7F3600C27DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DD2E0081B5C7F3600C27DE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,6 +131,28 @@
 				8DD2E00E1B5C7F3600C27DE1 /* ViewController.m */,
 				8DD2E0101B5C7F3600C27DE1 /* Main.storyboard */,
 				8DD2E0131B5C7F3600C27DE1 /* Images.xcassets */,
+				1D0CBD301B60C8A800FD6B6F /* feature-icon-location.png */,
+				1D0CBD321B60D92E00FD6B6F /* forest.jpg */,
+				1D0CBD341B60DA2D00FD6B6F /* Screen-shot-2011-10-17-at-9.32.20-AM.png */,
+				1D0CBD361B60DAED00FD6B6F /* 256px-Email_Shiny_Icon.svg.png */,
+				1D0CBD381B60DB7A00FD6B6F /* 9.png */,
+				1D0CBD3A1B60DBFD00FD6B6F /* Very-Basic-Search-icon.png */,
+				1D0CBD3C1B60DC4900FD6B6F /* google_web_search.png */,
+				1D0CBD3E1B60DCC500FD6B6F /* search-47.png */,
+				1D0CBD401B60DD2500FD6B6F /* tweetdeck-write.jpg */,
+				1D0CBD441B60E02E00FD6B6F /* back.png */,
+				1D0CBD461B60E36B00FD6B6F /* twitter-egg-icon.jpg */,
+				1D0CBD481B60E5C100FD6B6F /* accounts@2x.png */,
+				1D0CBD491B60E5C100FD6B6F /* compose@2x.png */,
+				1D0CBD4A1B60E5C100FD6B6F /* cover@2x.jpeg */,
+				1D0CBD4B1B60E5C100FD6B6F /* home@2x.png */,
+				1D0CBD4C1B60E5C100FD6B6F /* location@2x.png */,
+				1D0CBD4D1B60E5C100FD6B6F /* messages@2x.png */,
+				1D0CBD4E1B60E5C100FD6B6F /* notifications@2x.png */,
+				1D0CBD4F1B60E5C100FD6B6F /* profile@2x.jpeg */,
+				1D0CBD501B60E5C100FD6B6F /* search@2x.png */,
+				1D0CBD511B60E5C100FD6B6F /* settings@2x.png */,
+				1D0CBD521B60E5C100FD6B6F /* user@2x.png */,
 				8DD2E0151B5C7F3600C27DE1 /* LaunchScreen.xib */,
 				8DD2E0061B5C7F3600C27DE1 /* Supporting Files */,
 			);
@@ -199,8 +265,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0CBD5B1B60E5C100FD6B6F /* search@2x.png in Resources */,
+				1D0CBD3B1B60DBFD00FD6B6F /* Very-Basic-Search-icon.png in Resources */,
+				1D0CBD311B60C8A800FD6B6F /* feature-icon-location.png in Resources */,
+				1D0CBD411B60DD2500FD6B6F /* tweetdeck-write.jpg in Resources */,
+				1D0CBD561B60E5C100FD6B6F /* home@2x.png in Resources */,
+				1D0CBD391B60DB7A00FD6B6F /* 9.png in Resources */,
+				1D0CBD451B60E02E00FD6B6F /* back.png in Resources */,
+				1D0CBD371B60DAED00FD6B6F /* 256px-Email_Shiny_Icon.svg.png in Resources */,
+				1D0CBD551B60E5C100FD6B6F /* cover@2x.jpeg in Resources */,
 				8DD2E0121B5C7F3600C27DE1 /* Main.storyboard in Resources */,
+				1D0CBD541B60E5C100FD6B6F /* compose@2x.png in Resources */,
+				1D0CBD591B60E5C100FD6B6F /* notifications@2x.png in Resources */,
+				1D0CBD3D1B60DC4900FD6B6F /* google_web_search.png in Resources */,
+				1D0CBD351B60DA2D00FD6B6F /* Screen-shot-2011-10-17-at-9.32.20-AM.png in Resources */,
 				8DD2E0171B5C7F3600C27DE1 /* LaunchScreen.xib in Resources */,
+				1D0CBD3F1B60DCC500FD6B6F /* search-47.png in Resources */,
+				1D0CBD531B60E5C100FD6B6F /* accounts@2x.png in Resources */,
+				1D0CBD331B60D92E00FD6B6F /* forest.jpg in Resources */,
+				1D0CBD571B60E5C100FD6B6F /* location@2x.png in Resources */,
+				1D0CBD5C1B60E5C100FD6B6F /* settings@2x.png in Resources */,
+				1D0CBD5D1B60E5C100FD6B6F /* user@2x.png in Resources */,
+				1D0CBD5A1B60E5C100FD6B6F /* profile@2x.jpeg in Resources */,
+				1D0CBD471B60E36B00FD6B6F /* twitter-egg-icon.jpg in Resources */,
+				1D0CBD581B60E5C100FD6B6F /* messages@2x.png in Resources */,
 				8DD2E0141B5C7F3600C27DE1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TwitterUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TwitterUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +506,7 @@
 				8DD2E0281B5C7F3600C27DE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DD2E0291B5C7F3600C27DE1 /* Build configuration list for PBXNativeTarget "TwitterUITests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +515,7 @@
 				8DD2E02B1B5C7F3600C27DE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
