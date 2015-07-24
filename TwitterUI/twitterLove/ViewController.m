@@ -44,7 +44,7 @@
     //a border and rounded corners to the follow/following button
     self.followFollowingButton.layer.borderWidth = 1.5;
     
-    //"twitter blue" did not use because it seemed too dark
+    //"twitter blue" did not use because it seemed too dark for my taste
     //self.followFollowingButton.layer.borderColor =[UIColor colorWithRed:0.020 green:0.353 blue:0.808 alpha:1].CGColor;
     
     self.followFollowingButton.layer.borderColor =[UIColor colorWithRed:0.424 green:0.710 blue:1 alpha:1].CGColor;
@@ -58,10 +58,15 @@
     //color of follow button text
     self.followTextField.textColor = [UIColor colorWithRed:0.424 green:0.710 blue:1 alpha:1];
     
-    //change top image
-    self.topPhotoView.image = [self imageFromURLString:@"http://uppermerionfarmersmarket.org/umfm/wp-content/uploads/2014/06/strawberry1.jpg"];
-    //change profile pic
-    self.profilePic.image = [self imageFromURLString:@"http://chan.catiewayne.com/c/src/138577281099.jpg"];
+    //original top image
+    self.topPhotoView.image = [self imageFromURLString:@"http://i.imgur.com/h420SYI.jpg"];
+    //original profile pic
+    self.profilePic.image = [self imageFromURLString:@"https://pbs.twimg.com/profile_images/607610361433300992/OKxM0eFW_400x400.jpg"];
+    
+//    //change top image for testing
+//    self.topPhotoView.image = [self imageFromURLString:@"http://uppermerionfarmersmarket.org/umfm/wp-content/uploads/2014/06/strawberry1.jpg"];
+//    //change profile pic for testing
+//    self.profilePic.image = [self imageFromURLString:@"http://ihatemygout.com/wp-content/uploads/2009/05/bananas-curved-yellow-fruit-300x212.jpg"];
 }
 
 - (void)setupProfilePicture {
@@ -105,7 +110,7 @@
 
 - (IBAction)followButtonTapped:(UIButton *)sender {
     
-    NSString *currentFollowers = _numberOfFollowersField.text;
+    NSString *currentFollowers = self.numberOfFollowersField.text;
     NSLog(@"%@", currentFollowers);
     
     NSInteger followersInt = [currentFollowers intValue];
