@@ -83,7 +83,7 @@
                                                 </variation>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.1927156485" green="0.70140891130000005" blue="0.96798058710000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="bfC-Ga-Ka5" secondAttribute="trailing" constant="2" id="4nI-9l-Las"/>
                                             <constraint firstItem="bfC-Ga-Ka5" firstAttribute="top" secondItem="dxt-sx-lP5" secondAttribute="top" constant="2" id="IXT-p5-bG7"/>
@@ -116,7 +116,7 @@
                                                         <rect key="frame" x="30" y="3" width="53" height="30"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                         <state key="normal" title="  Follow">
-                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="titleColor" red="0.1927156485" green="0.70140891130000005" blue="0.96798058710000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                     </button>
@@ -147,7 +147,7 @@
                                                 </variation>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.1927156485" green="0.70140891130000005" blue="0.96798058710000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="5F6-5d-D02"/>
                                             <constraint firstAttribute="height" constant="40" id="7sc-vc-cj3"/>
@@ -410,14 +410,14 @@
                                         <rect key="frame" x="0.0" y="1" width="150" height="54"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="DBD-ap-sQz" userLabel="home image view">
-                                                <rect key="frame" x="60" y="5" width="30" height="30"/>
+                                                <rect key="frame" x="63" y="5" width="25" height="25"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="dBJ-gY-TPV"/>
-                                                    <constraint firstAttribute="width" constant="30" id="tKn-cd-1nr"/>
+                                                    <constraint firstAttribute="height" constant="25" id="dBJ-gY-TPV"/>
+                                                    <constraint firstAttribute="width" constant="25" id="tKn-cd-1nr"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pj-iQ-JvC">
-                                                <rect key="frame" x="52" y="34" width="46" height="20"/>
+                                                <rect key="frame" x="52" y="29" width="46" height="20"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -435,14 +435,14 @@
                                         <rect key="frame" x="300" y="1" width="150" height="54"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messages" translatesAutoresizingMaskIntoConstraints="NO" id="vEA-v7-EOW" userLabel="image view">
-                                                <rect key="frame" x="60" y="5" width="30" height="30"/>
+                                                <rect key="frame" x="63" y="5" width="25" height="25"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="30" id="QtV-GA-hWX"/>
-                                                    <constraint firstAttribute="height" constant="30" id="hS6-KQ-cW2"/>
+                                                    <constraint firstAttribute="width" constant="25" id="QtV-GA-hWX"/>
+                                                    <constraint firstAttribute="height" constant="25" id="hS6-KQ-cW2"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messages" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOW-Ms-bIX">
-                                                <rect key="frame" x="36" y="34" width="78" height="20"/>
+                                                <rect key="frame" x="36" y="29" width="78" height="20"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -460,14 +460,14 @@
                                         <rect key="frame" x="450" y="1" width="150" height="54"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="mJt-dj-O1Z" userLabel="image view">
-                                                <rect key="frame" x="60" y="5" width="30" height="30"/>
+                                                <rect key="frame" x="63" y="5" width="25" height="25"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="30" id="0tD-19-yJr"/>
-                                                    <constraint firstAttribute="height" constant="30" id="Ofp-MA-VN2"/>
+                                                    <constraint firstAttribute="width" constant="25" id="0tD-19-yJr"/>
+                                                    <constraint firstAttribute="height" constant="25" id="Ofp-MA-VN2"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyw-51-ay8">
-                                                <rect key="frame" x="64" y="34" width="24" height="20"/>
+                                                <rect key="frame" x="64" y="29" width="24" height="20"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -485,14 +485,14 @@
                                         <rect key="frame" x="150" y="1" width="150" height="54"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notifications" translatesAutoresizingMaskIntoConstraints="NO" id="YM0-7b-WDX" userLabel="image view">
-                                                <rect key="frame" x="55" y="5" width="30" height="30"/>
+                                                <rect key="frame" x="58" y="5" width="25" height="25"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="30" id="R7S-xW-bIs"/>
-                                                    <constraint firstAttribute="height" constant="30" id="WhE-ak-Ahe"/>
+                                                    <constraint firstAttribute="width" constant="25" id="R7S-xW-bIs"/>
+                                                    <constraint firstAttribute="height" constant="25" id="WhE-ak-Ahe"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpl-CQ-zfQ">
-                                                <rect key="frame" x="49" y="34" width="42" height="20"/>
+                                                <rect key="frame" x="49" y="29" width="42" height="20"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -638,6 +638,8 @@
                         <outlet property="avatarView" destination="zvj-wc-4YZ" id="wgF-Ap-HUa"/>
                         <outlet property="bubbleView" destination="dxt-sx-lP5" id="SmV-qE-Q0A"/>
                         <outlet property="followView" destination="l8v-KT-qdW" id="l3I-Uh-DcP"/>
+                        <outlet property="imageBubble" destination="akv-Fk-QgP" id="t8b-58-xUn"/>
+                        <outlet property="imageFollow" destination="Ruc-cJ-Bzu" id="N3L-8G-cjB"/>
                         <outlet property="innerBubbleView" destination="bfC-Ga-Ka5" id="VWz-4B-0mb"/>
                         <outlet property="innerFollowView" destination="xdD-3E-knp" id="POc-6y-6aI"/>
                     </connections>
