@@ -46,7 +46,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3B-oO-eMN">
-                                                <rect key="frame" x="405" y="12" width="23" height="23"/>
+                                                <rect key="frame" x="409" y="14" width="19" height="19"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="T3B-oO-eMN" secondAttribute="height" multiplier="1:1" id="cax-9y-9VT"/>
                                                 </constraints>
@@ -65,7 +65,7 @@
                                             <constraint firstItem="dCC-gy-C4i" firstAttribute="leading" secondItem="A5Q-ZC-l8W" secondAttribute="trailing" constant="5" id="lAL-Db-dhw"/>
                                             <constraint firstAttribute="trailing" secondItem="dCC-gy-C4i" secondAttribute="trailing" constant="10" id="oC2-cV-o49"/>
                                             <constraint firstItem="dCC-gy-C4i" firstAttribute="height" secondItem="Ctj-UQ-b4z" secondAttribute="height" multiplier="0.65" id="pEO-cK-NCH"/>
-                                            <constraint firstItem="T3B-oO-eMN" firstAttribute="height" secondItem="Ctj-UQ-b4z" secondAttribute="height" multiplier="0.5" id="uu5-Zw-cHQ"/>
+                                            <constraint firstItem="T3B-oO-eMN" firstAttribute="height" secondItem="Ctj-UQ-b4z" secondAttribute="height" multiplier="0.4" id="uu5-Zw-cHQ"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZr-k7-os7" userLabel="coverScale">
@@ -176,7 +176,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3h-HM-jAU">
                                         <rect key="frame" x="10" y="52" width="580" height="36"/>
-                                        <string key="text">Lift the shoulder parts of your shirt one at a time by pinching and pulling the fabric first left then right then repeat. Best workout. </string>
+                                        <string key="text">Lift the shoulder parts of your shirt one at a time by pinching and pulling the fabric up, first the left side then right side then repeat. Best workout. </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -191,8 +191,8 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NYC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osf-Lm-FcG">
-                                                <rect key="frame" x="24" y="9" width="36" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="24" y="10" width="32" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -227,7 +227,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOLLOWING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcN-xE-nDu">
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOLLOWERS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcN-xE-nDu">
                                                 <rect key="frame" x="348" y="10" width="232" height="16"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
