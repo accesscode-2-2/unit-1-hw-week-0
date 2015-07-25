@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *profile;
 
 @property (weak, nonatomic) IBOutlet UIImageView *viewsphoto;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 @end
 
 @implementation ViewController
@@ -36,6 +37,11 @@
     else if(sender.selectedSegmentIndex == 2) {
         [self.viewsphoto setImage:[UIImage imageNamed:@"favorites"]];
     }
+    
+}
+
+- (IBAction)buttonImageChanged:(id)sender {
+    [self.button setBackgroundImage:[UIImage imageNamed: @"following"]forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
