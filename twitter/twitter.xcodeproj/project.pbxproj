@@ -15,29 +15,21 @@
 		3D392D5B1B5C30A200615BB2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D392D591B5C30A200615BB2 /* LaunchScreen.xib */; };
 		3D392D671B5C30A200615BB2 /* twitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D392D661B5C30A200615BB2 /* twitterTests.m */; };
 		3D392D711B5C30CF00615BB2 /* tom_myspace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D392D701B5C30CF00615BB2 /* tom_myspace.jpg */; };
-		3D392D731B5C30DF00615BB2 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D392D721B5C30DF00615BB2 /* banner.png */; };
 		3D7C505D1B5F7C5D0031BE80 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C50511B5F7C5D0031BE80 /* arrow.png */; };
 		3D7C505E1B5F7C5D0031BE80 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C50521B5F7C5D0031BE80 /* giphy.gif */; };
 		3D7C505F1B5F7C5D0031BE80 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C50531B5F7C5D0031BE80 /* home.png */; };
-		3D7C50601B5F7C5D0031BE80 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C50541B5F7C5D0031BE80 /* location.png */; };
 		3D7C50611B5F7C5D0031BE80 /* message-this.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C50551B5F7C5D0031BE80 /* message-this.png */; };
 		3D7C50621B5F7C5D0031BE80 /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C50561B5F7C5D0031BE80 /* message.png */; };
 		3D7C50631B5F7C5D0031BE80 /* notifications.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C50571B5F7C5D0031BE80 /* notifications.png */; };
 		3D7C50641B5F7C5D0031BE80 /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C50581B5F7C5D0031BE80 /* person.png */; };
 		3D7C50661B5F7C5D0031BE80 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C505A1B5F7C5D0031BE80 /* settings.png */; };
-		3D7C50671B5F7C5D0031BE80 /* top-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C505B1B5F7C5D0031BE80 /* top-bar.png */; };
 		3D7C50681B5F7C5D0031BE80 /* tweet-write.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C505C1B5F7C5D0031BE80 /* tweet-write.png */; };
 		3D7C506A1B5F7D8D0031BE80 /* follow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C50691B5F7D8D0031BE80 /* follow.png */; };
 		3D7C506C1B5F81BA0031BE80 /* search-this.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C506B1B5F81BA0031BE80 /* search-this.png */; };
 		3D7C506E1B5FF1850031BE80 /* 1437597740_location-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C506D1B5FF1850031BE80 /* 1437597740_location-01.png */; };
 		3D7C50711B600B5E0031BE80 /* bottom-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C506F1B600B5E0031BE80 /* bottom-bar.png */; };
 		3D7C50721B600B5E0031BE80 /* text-content.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C50701B600B5E0031BE80 /* text-content.png */; };
-		3DB570AB1B5C758100E5FCCB /* myspace-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3DB570AA1B5C758100E5FCCB /* myspace-logo.jpg */; };
-		3DE59F4D1B5D240900521968 /* compose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE59F4C1B5D240900521968 /* compose@2x.png */; };
-		3DE59F4F1B5D249600521968 /* notifications@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE59F4E1B5D249600521968 /* notifications@2x.png */; };
 		3DE59F531B5D24DF00521968 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE59F521B5D24DF00521968 /* settings@2x.png */; };
-		3DE59F551B5D251200521968 /* messages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE59F541B5D251200521968 /* messages@2x.png */; };
-		3DE59F571B5D265100521968 /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE59F561B5D265100521968 /* user@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,29 +57,21 @@
 		3D392D651B5C30A200615BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D392D661B5C30A200615BB2 /* twitterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twitterTests.m; sourceTree = "<group>"; };
 		3D392D701B5C30CF00615BB2 /* tom_myspace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tom_myspace.jpg; sourceTree = "<group>"; };
-		3D392D721B5C30DF00615BB2 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
 		3D7C50511B5F7C5D0031BE80 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		3D7C50521B5F7C5D0031BE80 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
 		3D7C50531B5F7C5D0031BE80 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
-		3D7C50541B5F7C5D0031BE80 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
 		3D7C50551B5F7C5D0031BE80 /* message-this.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message-this.png"; sourceTree = "<group>"; };
 		3D7C50561B5F7C5D0031BE80 /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message.png; sourceTree = "<group>"; };
 		3D7C50571B5F7C5D0031BE80 /* notifications.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notifications.png; sourceTree = "<group>"; };
 		3D7C50581B5F7C5D0031BE80 /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
 		3D7C505A1B5F7C5D0031BE80 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
-		3D7C505B1B5F7C5D0031BE80 /* top-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top-bar.png"; sourceTree = "<group>"; };
 		3D7C505C1B5F7C5D0031BE80 /* tweet-write.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tweet-write.png"; sourceTree = "<group>"; };
 		3D7C50691B5F7D8D0031BE80 /* follow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = follow.png; sourceTree = "<group>"; };
 		3D7C506B1B5F81BA0031BE80 /* search-this.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-this.png"; sourceTree = "<group>"; };
 		3D7C506D1B5FF1850031BE80 /* 1437597740_location-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1437597740_location-01.png"; sourceTree = "<group>"; };
 		3D7C506F1B600B5E0031BE80 /* bottom-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottom-bar.png"; sourceTree = "<group>"; };
 		3D7C50701B600B5E0031BE80 /* text-content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-content.png"; sourceTree = "<group>"; };
-		3DB570AA1B5C758100E5FCCB /* myspace-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "myspace-logo.jpg"; sourceTree = "<group>"; };
-		3DE59F4C1B5D240900521968 /* compose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compose@2x.png"; sourceTree = "<group>"; };
-		3DE59F4E1B5D249600521968 /* notifications@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notifications@2x.png"; sourceTree = "<group>"; };
 		3DE59F521B5D24DF00521968 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
-		3DE59F541B5D251200521968 /* messages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messages@2x.png"; sourceTree = "<group>"; };
-		3DE59F561B5D265100521968 /* user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,22 +135,14 @@
 				3D7C50531B5F7C5D0031BE80 /* home.png */,
 				3D7C506F1B600B5E0031BE80 /* bottom-bar.png */,
 				3D7C50701B600B5E0031BE80 /* text-content.png */,
-				3D7C50541B5F7C5D0031BE80 /* location.png */,
 				3D7C506B1B5F81BA0031BE80 /* search-this.png */,
 				3D7C50551B5F7C5D0031BE80 /* message-this.png */,
 				3D7C50561B5F7C5D0031BE80 /* message.png */,
 				3D7C50571B5F7C5D0031BE80 /* notifications.png */,
 				3D7C50581B5F7C5D0031BE80 /* person.png */,
 				3D7C505A1B5F7C5D0031BE80 /* settings.png */,
-				3D7C505B1B5F7C5D0031BE80 /* top-bar.png */,
 				3D7C505C1B5F7C5D0031BE80 /* tweet-write.png */,
-				3DE59F561B5D265100521968 /* user@2x.png */,
-				3DE59F541B5D251200521968 /* messages@2x.png */,
 				3DE59F521B5D24DF00521968 /* settings@2x.png */,
-				3DE59F4E1B5D249600521968 /* notifications@2x.png */,
-				3DE59F4C1B5D240900521968 /* compose@2x.png */,
-				3DB570AA1B5C758100E5FCCB /* myspace-logo.jpg */,
-				3D392D721B5C30DF00615BB2 /* banner.png */,
 				3D392D701B5C30CF00615BB2 /* tom_myspace.jpg */,
 				3D392D4B1B5C30A200615BB2 /* Info.plist */,
 				3D392D4C1B5C30A200615BB2 /* main.m */,
@@ -275,26 +251,18 @@
 				3DE59F531B5D24DF00521968 /* settings@2x.png in Resources */,
 				3D392D561B5C30A200615BB2 /* Main.storyboard in Resources */,
 				3D7C50681B5F7C5D0031BE80 /* tweet-write.png in Resources */,
-				3DE59F551B5D251200521968 /* messages@2x.png in Resources */,
-				3D7C50671B5F7C5D0031BE80 /* top-bar.png in Resources */,
 				3D7C50641B5F7C5D0031BE80 /* person.png in Resources */,
 				3D7C506E1B5FF1850031BE80 /* 1437597740_location-01.png in Resources */,
 				3D7C50711B600B5E0031BE80 /* bottom-bar.png in Resources */,
-				3DE59F571B5D265100521968 /* user@2x.png in Resources */,
-				3DE59F4D1B5D240900521968 /* compose@2x.png in Resources */,
 				3D7C505D1B5F7C5D0031BE80 /* arrow.png in Resources */,
 				3D392D5B1B5C30A200615BB2 /* LaunchScreen.xib in Resources */,
-				3D7C50601B5F7C5D0031BE80 /* location.png in Resources */,
-				3DB570AB1B5C758100E5FCCB /* myspace-logo.jpg in Resources */,
 				3D7C506C1B5F81BA0031BE80 /* search-this.png in Resources */,
-				3DE59F4F1B5D249600521968 /* notifications@2x.png in Resources */,
 				3D392D581B5C30A200615BB2 /* Images.xcassets in Resources */,
 				3D7C50661B5F7C5D0031BE80 /* settings.png in Resources */,
 				3D7C505F1B5F7C5D0031BE80 /* home.png in Resources */,
 				3D7C50611B5F7C5D0031BE80 /* message-this.png in Resources */,
 				3D7C506A1B5F7D8D0031BE80 /* follow.png in Resources */,
 				3D392D711B5C30CF00615BB2 /* tom_myspace.jpg in Resources */,
-				3D392D731B5C30DF00615BB2 /* banner.png in Resources */,
 				3D7C50631B5F7C5D0031BE80 /* notifications.png in Resources */,
 				3D7C50621B5F7C5D0031BE80 /* message.png in Resources */,
 				3D7C50721B600B5E0031BE80 /* text-content.png in Resources */,
