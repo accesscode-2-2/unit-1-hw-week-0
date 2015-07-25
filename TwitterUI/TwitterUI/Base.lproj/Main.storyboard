@@ -349,6 +349,37 @@
                                                     </mask>
                                                 </variation>
                                             </view>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Click for NSURL" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JjX-8R-hnm">
+                                                <rect key="frame" x="470" y="61" width="123" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="41V-Pq-IwF"/>
+                                                    <constraint firstAttribute="width" constant="123" id="zIS-tD-7IW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbT-av-Mjm">
+                                                <rect key="frame" x="470" y="65" width="123" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="8zx-Ab-TnU"/>
+                                                    <constraint firstAttribute="width" constant="112" id="DeY-XB-ltf"/>
+                                                    <constraint firstAttribute="height" constant="26" id="Frt-CQ-f97"/>
+                                                    <constraint firstAttribute="width" constant="123" id="t4F-As-vld"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="8zx-Ab-TnU"/>
+                                                        <exclude reference="DeY-XB-ltf"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="clickForNSURL:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8L4-ev-bDb"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -359,18 +390,23 @@
                                             <constraint firstItem="DUJ-ri-87Y" firstAttribute="top" secondItem="22n-vJ-3ke" secondAttribute="top" constant="-45" id="8Sj-VM-oQZ"/>
                                             <constraint firstItem="Hst-WZ-Vol" firstAttribute="leading" secondItem="22n-vJ-3ke" secondAttribute="leading" constant="8" id="ATp-Lr-lxT"/>
                                             <constraint firstItem="f7v-yE-Skm" firstAttribute="leading" secondItem="dHU-ZW-pmp" secondAttribute="trailing" constant="7" id="BOu-Fw-TNC"/>
+                                            <constraint firstAttribute="trailing" secondItem="BbT-av-Mjm" secondAttribute="trailing" constant="8" id="COO-92-KvA"/>
                                             <constraint firstItem="7ba-Hw-mfv" firstAttribute="leading" secondItem="MUw-S2-yzv" secondAttribute="trailing" constant="8" id="D5z-nX-JB7"/>
                                             <constraint firstItem="DUJ-ri-87Y" firstAttribute="leading" secondItem="22n-vJ-3ke" secondAttribute="leading" constant="8" id="GjC-7X-HLh"/>
                                             <constraint firstItem="Q7X-kT-nIh" firstAttribute="leading" secondItem="sXq-Gq-8rn" secondAttribute="trailing" constant="7" id="JJi-Ky-e99"/>
                                             <constraint firstItem="Ytx-KZ-Ecf" firstAttribute="top" secondItem="Ycc-Ih-ihE" secondAttribute="bottom" constant="4" id="LFf-Th-abY"/>
                                             <constraint firstAttribute="trailing" secondItem="CTC-XF-scl" secondAttribute="trailing" constant="7" id="LMt-Y9-db4"/>
+                                            <constraint firstItem="BbT-av-Mjm" firstAttribute="top" secondItem="hG8-dq-ZL2" secondAttribute="bottom" constant="15" id="LNO-Gy-GeI"/>
                                             <constraint firstAttribute="bottom" secondItem="wF6-GB-opS" secondAttribute="bottom" id="LeB-re-qvS"/>
                                             <constraint firstAttribute="trailing" secondItem="hG8-dq-ZL2" secondAttribute="trailing" constant="10" id="Mxs-r4-LLi"/>
                                             <constraint firstItem="Ycc-Ih-ihE" firstAttribute="leading" secondItem="22n-vJ-3ke" secondAttribute="leading" constant="8" id="Nyf-iR-mxB"/>
+                                            <constraint firstAttribute="trailing" secondItem="JjX-8R-hnm" secondAttribute="trailing" constant="7" id="QVE-Ur-SMv"/>
                                             <constraint firstItem="Ycc-Ih-ihE" firstAttribute="top" secondItem="DUJ-ri-87Y" secondAttribute="bottom" constant="2" id="Ria-RX-i8X"/>
                                             <constraint firstItem="Hst-WZ-Vol" firstAttribute="top" secondItem="Ytx-KZ-Ecf" secondAttribute="bottom" constant="4" id="U5v-8h-Meo"/>
                                             <constraint firstItem="Q7X-kT-nIh" firstAttribute="leading" secondItem="sXq-Gq-8rn" secondAttribute="trailing" constant="7" id="Urd-4D-Uh6"/>
                                             <constraint firstItem="sXq-Gq-8rn" firstAttribute="leading" secondItem="f7v-yE-Skm" secondAttribute="trailing" constant="35" id="VIn-aM-Xc8"/>
+                                            <constraint firstItem="BbT-av-Mjm" firstAttribute="top" secondItem="hG8-dq-ZL2" secondAttribute="bottom" constant="14" id="Vas-po-pyK"/>
+                                            <constraint firstItem="JjX-8R-hnm" firstAttribute="top" secondItem="hG8-dq-ZL2" secondAttribute="bottom" constant="10" id="Xyt-cA-bQF"/>
                                             <constraint firstItem="MUw-S2-yzv" firstAttribute="top" secondItem="22n-vJ-3ke" secondAttribute="top" constant="17" id="bWr-2k-LsE"/>
                                             <constraint firstItem="p8p-dq-dKc" firstAttribute="leading" secondItem="4LN-xO-Cmd" secondAttribute="trailing" constant="12" id="byz-e9-KPC"/>
                                             <constraint firstItem="p8p-dq-dKc" firstAttribute="top" secondItem="Hst-WZ-Vol" secondAttribute="bottom" constant="4" id="ejP-jr-s4D"/>
@@ -379,6 +415,7 @@
                                             <constraint firstAttribute="trailing" secondItem="wF6-GB-opS" secondAttribute="trailing" id="jyh-ba-vPz"/>
                                             <constraint firstItem="Q7X-kT-nIh" firstAttribute="top" secondItem="Hst-WZ-Vol" secondAttribute="bottom" constant="30" id="k6J-l9-zsB"/>
                                             <constraint firstItem="Ytx-KZ-Ecf" firstAttribute="leading" secondItem="22n-vJ-3ke" secondAttribute="leading" constant="8" id="ky2-bl-32O"/>
+                                            <constraint firstAttribute="trailing" secondItem="BbT-av-Mjm" secondAttribute="trailing" constant="7" id="rE6-EJ-PAH"/>
                                             <constraint firstItem="4LN-xO-Cmd" firstAttribute="top" secondItem="Hst-WZ-Vol" secondAttribute="bottom" constant="4" id="rbN-Ag-xuZ"/>
                                             <constraint firstItem="dHU-ZW-pmp" firstAttribute="top" secondItem="p8p-dq-dKc" secondAttribute="bottom" constant="5" id="sBL-qs-8B6"/>
                                             <constraint firstItem="wF6-GB-opS" firstAttribute="top" secondItem="CTC-XF-scl" secondAttribute="bottom" constant="3" id="sg2-qe-QqR"/>
@@ -387,6 +424,12 @@
                                             <constraint firstItem="4LN-xO-Cmd" firstAttribute="leading" secondItem="22n-vJ-3ke" secondAttribute="leading" constant="8" id="vMa-3h-wWy"/>
                                             <constraint firstItem="7ba-Hw-mfv" firstAttribute="top" secondItem="22n-vJ-3ke" secondAttribute="top" constant="10" id="zKv-qE-6WA"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="COO-92-KvA"/>
+                                                <exclude reference="LNO-Gy-GeI"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -417,6 +460,8 @@
                         <outlet property="NumberOfFollowers" destination="sXq-Gq-8rn" id="6YT-0X-l4w"/>
                         <outlet property="PleaseTapToRetry" destination="4K9-RN-E94" id="fyQ-hY-d3N"/>
                         <outlet property="TweetsMediaFavorites" destination="CTC-XF-scl" id="yOB-va-3uO"/>
+                        <outlet property="clickForImage" destination="JjX-8R-hnm" id="b6E-cS-ujh"/>
+                        <outlet property="clickForNSURL" destination="BbT-av-Mjm" id="fdh-L3-Vug"/>
                         <outlet property="coverPhoto" destination="XaT-JP-SrZ" id="eqq-OV-jP6"/>
                         <outlet property="cutPicture" destination="qTw-ca-Xjq" id="0hk-Wa-vPQ"/>
                         <outlet property="followButton" destination="FbI-dP-Oj5" id="EPI-29-58n"/>

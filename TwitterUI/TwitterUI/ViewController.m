@@ -17,6 +17,9 @@
 @property (weak, nonatomic) IBOutlet UIView *pictureHolder;
 @property (weak, nonatomic) IBOutlet UIImageView *cutPicture;
 @property (weak, nonatomic) IBOutlet UIImageView *coverPhoto;
+@property (weak, nonatomic) IBOutlet UIButton *clickForNSURL;
+@property (weak, nonatomic) IBOutlet UITextField *clickForImage;
+
 
 
 @property (weak, nonatomic) IBOutlet UIView *followView;
@@ -47,16 +50,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //get cover url
-    NSURL *coverImageLink = [NSURL URLWithString:@"http://www.entertainmentcruises.com/website/images/media/spirit_newjersey_statue.jpg"];
-    NSData *coverData = [NSData dataWithContentsOfURL:coverImageLink];
-    self.coverPhoto.image = [UIImage imageWithData:coverData] ;
-    
-    //get profile picture url
-    NSURL *profilePictureLink = [NSURL URLWithString:@"https://s-media-cache-ak0.pinimg.com/236x/73/20/9c/73209c21dec8e08ea18d41a5cc144c0d.jpg"];
-    NSData *profileData = [NSData dataWithContentsOfURL:profilePictureLink];
-    self.cutPicture.image = [UIImage imageWithData:profileData] ;
-    
+
     
     //hide tweets while you are not following yet
     self.FollowingScreen.hidden = TRUE;
@@ -81,6 +75,33 @@
     self.wall.layer.borderColor =[UIColor colorWithRed:0.33 green:0.49 blue:0.52 alpha:1.0].CGColor;
     
 }
+
+
+- (IBAction)clickForNSURL:(id)sender {
+    
+    
+    
+    //get cover url
+    NSURL *coverImageLink = [NSURL URLWithString:@"http://www.entertainmentcruises.com/website/images/media/spirit_newjersey_statue.jpg"];
+    NSData *coverData = [NSData dataWithContentsOfURL:coverImageLink];
+    self.coverPhoto.image = [UIImage imageWithData:coverData] ;
+    
+    //get profile picture url
+    NSURL *profilePictureLink = [NSURL URLWithString:@"https://s-media-cache-ak0.pinimg.com/236x/73/20/9c/73209c21dec8e08ea18d41a5cc144c0d.jpg"];
+    NSData *profileData = [NSData dataWithContentsOfURL:profilePictureLink];
+    self.cutPicture.image = [UIImage imageWithData:profileData] ;
+    
+    self.clickForImage.hidden = YES;
+    
+    
+    
+    
+    
+}
+
+
+
+
 
 
 
@@ -116,6 +137,10 @@
     
     
 }
+
+
+
+
 
 
     // TweetsMediaFavorites
