@@ -6,7 +6,9 @@
 //  Copyright (c) 2015 Mike Kavouras. All rights reserved.
 //
 
+#import <QuartzCore/CALayer.h>
 #import "ViewController.h"
+
 
 @interface ViewController ()
 
@@ -14,10 +16,28 @@
 
 @implementation ViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+    
+  /*
+    UIImageView *profile = [[UIImageView alloc]init];
+    profile.layer.masksToBounds = YES;
+    profile.layer.borderColor = [UIColor redColor].CGColor;
+    profile.layer.borderWidth = 10;
+   
+   */
+    
+    self.profile.layer.cornerRadius = self.profile.frame.size.width/5;
+    self.profile.clipsToBounds = YES;
+    self.profile.layer.borderWidth = 5.0f;
+    self.profile.layer.borderColor = [UIColor whiteColor].CGColor;
+    
+    
+   
+    
+    }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
