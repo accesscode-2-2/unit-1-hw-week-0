@@ -13,12 +13,18 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *viewsphoto;
 @property (weak, nonatomic) IBOutlet UIButton *button;
+
+@property (nonatomic) BOOL following;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.following = NO;
+    
     // Do any additional setup after loading the view, typically from a nib.
     self.profile.clipsToBounds = YES;
     self.profile.layer.cornerRadius = 10.0;
@@ -40,8 +46,18 @@
     
 }
 
-- (IBAction)buttonImageChanged:(id)sender {
-    [self.button setBackgroundImage:[UIImage imageNamed: @"following"]forState:UIControlStateNormal];
+- (IBAction)buttonImageChanged:(NSString *)sender {
+    
+    if (self.following) {
+        // show the unfollow button
+        [self.button setBackgroundImage:[UIImage imageNamed: @"follow1"] forState:UIControlStateNormal];
+    } else {
+        // show the follow button
+        [self.button setBackgroundImage:[UIImage imageNamed: @"following"]forState:UIControlStateNormal];
+    }
+    
+    self.following = !self.following;
+
 }
 
 - (void)didReceiveMemoryWarning {
