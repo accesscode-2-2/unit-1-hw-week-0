@@ -27,7 +27,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvj-wc-4YZ" userLabel="avatar view">
                                         <rect key="frame" x="10" y="100" width="100" height="100"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="virtch 9" translatesAutoresizingMaskIntoConstraints="NO" id="SRP-CV-xZh" userLabel="avatar image">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="virtch" translatesAutoresizingMaskIntoConstraints="NO" id="SRP-CV-xZh" userLabel="avatar image">
                                                 <rect key="frame" x="3" y="3" width="95" height="95"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="95" id="Xt6-wi-Fnv"/>
@@ -685,6 +685,6 @@
         <image name="settings" width="64" height="64"/>
         <image name="user" width="64" height="64"/>
         <image name="verified" width="48" height="48"/>
-        <image name="virtch 9" width="637" height="637"/>
+        <image name="virtch" width="637" height="637"/>
     </resources>
 </document>
