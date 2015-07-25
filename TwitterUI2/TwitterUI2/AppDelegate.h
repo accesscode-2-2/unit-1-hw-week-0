@@ -1,9 +1,9 @@
 //
 //  AppDelegate.h
-//  TwitterUI
+//  TwitterUI2
 //
-//  Created by Michael Kavouras on 7/19/15.
-//  Copyright (c) 2015 Mike Kavouras. All rights reserved.
+//  Created by Eric Sanchez on 7/24/15.
+//  Copyright (c) 2015 Eric Sanchez. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
