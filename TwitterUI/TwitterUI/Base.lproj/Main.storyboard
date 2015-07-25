@@ -110,7 +110,7 @@
                                                 </segments>
                                                 <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
-                                                    <action selector="segmentControlValueDidChange:" destination="vXZ-lx-hvc" eventType="valueChanged" id="3Wb-rM-xEy"/>
+                                                    <action selector="segmentedControlAction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="oqU-Rm-YQ6"/>
                                                 </connections>
                                             </segmentedControl>
                                         </subviews>
@@ -588,8 +588,20 @@
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="32M-Y2-43G">
                                         <rect key="frame" x="290" y="110" width="20" height="20"/>
                                     </activityIndicatorView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading tweets..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnF-k0-N6a">
-                                        <rect key="frame" x="234" y="85" width="132" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Tweets..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnF-k0-N6a">
+                                        <rect key="frame" x="233" y="85" width="135" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Media..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRJ-rH-vtz">
+                                        <rect key="frame" x="236" y="85" width="129" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Favorites..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTK-X0-Qdu">
+                                        <rect key="frame" x="224" y="85" width="152" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -597,9 +609,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="GnF-k0-N6a" firstAttribute="top" secondItem="HRJ-rH-vtz" secondAttribute="bottom" id="0n9-Rq-z9q"/>
                                     <constraint firstAttribute="trailing" secondItem="n8N-Sl-wqR" secondAttribute="trailing" id="27g-TJ-yZU"/>
                                     <constraint firstItem="n8N-Sl-wqR" firstAttribute="leading" secondItem="n9V-sm-aiy" secondAttribute="leading" id="IDh-zZ-FcH"/>
+                                    <constraint firstItem="32M-Y2-43G" firstAttribute="top" secondItem="HRJ-rH-vtz" secondAttribute="bottom" constant="4" id="PUy-6t-dnR"/>
+                                    <constraint firstItem="HRJ-rH-vtz" firstAttribute="top" secondItem="VTK-X0-Qdu" secondAttribute="bottom" id="beJ-fb-ajx"/>
+                                    <constraint firstItem="32M-Y2-43G" firstAttribute="top" secondItem="VTK-X0-Qdu" secondAttribute="bottom" constant="4" id="emb-Ni-eVW"/>
+                                    <constraint firstAttribute="centerX" secondItem="HRJ-rH-vtz" secondAttribute="centerX" id="fpg-q8-JH0"/>
                                     <constraint firstAttribute="centerY" secondItem="32M-Y2-43G" secondAttribute="centerY" id="oxb-8a-4XD"/>
+                                    <constraint firstAttribute="centerX" secondItem="VTK-X0-Qdu" secondAttribute="centerX" id="qry-Wn-03p"/>
                                     <constraint firstItem="32M-Y2-43G" firstAttribute="top" secondItem="GnF-k0-N6a" secondAttribute="bottom" constant="4" id="u3h-E0-BRC"/>
                                     <constraint firstAttribute="bottom" secondItem="n8N-Sl-wqR" secondAttribute="bottom" id="ucR-26-Q4B"/>
                                     <constraint firstAttribute="centerX" secondItem="GnF-k0-N6a" secondAttribute="centerX" id="wN8-pB-uvA"/>
@@ -610,6 +628,12 @@
                                         <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0n9-Rq-z9q"/>
+                                        <exclude reference="beJ-fb-ajx"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -639,56 +663,15 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="followBar" destination="8jG-Ji-MY9" id="4IY-1C-6ZS"/>
+                        <outlet property="labelFavorites" destination="VTK-X0-Qdu" id="5zH-xv-WFI"/>
+                        <outlet property="labelMedia" destination="HRJ-rH-vtz" id="0ZA-M2-qTP"/>
                         <outlet property="labelTweets" destination="GnF-k0-N6a" id="GRf-uq-scz"/>
-                        <outlet property="segmentedControl" destination="unn-bp-F0i" id="Zsn-SC-hAb"/>
+                        <outlet property="segmentedControl" destination="unn-bp-F0i" id="8oK-FK-UPQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="375" y="369"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="83s-lx-MvE">
-            <objects>
-                <viewController id="aXN-qR-FjQ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gQZ-ss-jDY"/>
-                        <viewControllerLayoutGuide type="bottom" id="W6f-sY-ZBx"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="u2M-BX-XPO">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oYY-Cq-3CA">
-                                <rect key="frame" x="48" y="286" width="504" height="29"/>
-                                <segments>
-                                    <segment title="Tweets"/>
-                                    <segment title="Media"/>
-                                    <segment title="Favorites"/>
-                                </segments>
-                                <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F53-kf-8va">
-                                <rect key="frame" x="255" y="140" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="oYY-Cq-3CA" firstAttribute="leading" secondItem="u2M-BX-XPO" secondAttribute="leadingMargin" constant="32" id="9sX-dS-Lir"/>
-                            <constraint firstAttribute="centerX" secondItem="oYY-Cq-3CA" secondAttribute="centerX" id="A2D-OV-gog"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="oYY-Cq-3CA" secondAttribute="trailing" constant="32" id="EQX-I3-y8D"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="oYY-Cq-3CA" secondAttribute="trailing" constant="32" id="KOq-P9-cYm"/>
-                            <constraint firstAttribute="centerY" secondItem="oYY-Cq-3CA" secondAttribute="centerY" id="w8N-OF-Gqk"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o3T-5w-RTx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1055" y="401"/>
         </scene>
     </scenes>
     <resources>
