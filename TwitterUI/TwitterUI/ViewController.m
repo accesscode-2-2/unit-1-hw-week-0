@@ -11,6 +11,7 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *profile;
 
+@property (weak, nonatomic) IBOutlet UIImageView *viewsphoto;
 @end
 
 @implementation ViewController
@@ -22,6 +23,19 @@
     self.profile.layer.cornerRadius = 10.0;
     self.profile.layer.borderColor = [UIColor whiteColor].CGColor;
     self.profile.layer.borderWidth = 2.0;
+
+}
+
+- (IBAction)segmentedControlValueChanged:(UISegmentedControl *)sender {
+    if (sender.selectedSegmentIndex == 0) {
+        [self.viewsphoto setImage:[UIImage imageNamed:@"tweets1"]];
+    }
+    else if(sender.selectedSegmentIndex == 1) {
+        [self.viewsphoto setImage:[UIImage imageNamed:@"media"]];
+    }
+    else if(sender.selectedSegmentIndex == 2) {
+        [self.viewsphoto setImage:[UIImage imageNamed:@"favorites"]];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
