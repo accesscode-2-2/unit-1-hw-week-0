@@ -417,6 +417,7 @@
                         <outlet property="NumberOfFollowers" destination="sXq-Gq-8rn" id="6YT-0X-l4w"/>
                         <outlet property="PleaseTapToRetry" destination="4K9-RN-E94" id="fyQ-hY-d3N"/>
                         <outlet property="TweetsMediaFavorites" destination="CTC-XF-scl" id="yOB-va-3uO"/>
+                        <outlet property="coverPhoto" destination="XaT-JP-SrZ" id="eqq-OV-jP6"/>
                         <outlet property="cutPicture" destination="qTw-ca-Xjq" id="0hk-Wa-vPQ"/>
                         <outlet property="followButton" destination="FbI-dP-Oj5" id="EPI-29-58n"/>
                         <outlet property="followView" destination="hG8-dq-ZL2" id="7XA-uS-IZy"/>
@@ -430,77 +431,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133" y="252"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="CgP-UW-wJr">
-            <objects>
-                <viewController id="1K4-Az-UG0" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4k9-bh-RBX"/>
-                        <viewControllerLayoutGuide type="bottom" id="XIw-uE-x1U"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uvQ-RI-LTn">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ab2-h4-WPs">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIn-1n-umb" userLabel="1">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDo-gN-EhO" userLabel="2">
-                                        <rect key="frame" x="0.0" y="200" width="600" height="400"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgt-0k-yq8">
-                                                <rect key="frame" x="21" y="-135" width="123" height="263"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="263" id="5cO-Il-huw"/>
-                                                    <constraint firstAttribute="width" constant="123" id="lFi-yU-MIq"/>
-                                                </constraints>
-                                            </view>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Epm-em-aXL">
-                                                <rect key="frame" x="121" y="169" width="123" height="29"/>
-                                                <segments>
-                                                    <segment title="First"/>
-                                                    <segment title="Second"/>
-                                                </segments>
-                                            </segmentedControl>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.81728130200439553" green="0.89528383215989771" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="sgt-0k-yq8" secondAttribute="bottom" constant="272" id="ZzZ-0X-5dy"/>
-                                            <constraint firstItem="sgt-0k-yq8" firstAttribute="leading" secondItem="bDo-gN-EhO" secondAttribute="leading" constant="21" id="qTb-Nr-TBi"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="VIn-1n-umb" firstAttribute="leading" secondItem="Ab2-h4-WPs" secondAttribute="leading" id="4KD-9i-zOZ"/>
-                                    <constraint firstItem="bDo-gN-EhO" firstAttribute="leading" secondItem="Ab2-h4-WPs" secondAttribute="leading" id="7VR-vQ-yWc"/>
-                                    <constraint firstItem="bDo-gN-EhO" firstAttribute="height" secondItem="Ab2-h4-WPs" secondAttribute="height" multiplier="2:3" id="Gwk-To-ODX"/>
-                                    <constraint firstAttribute="bottom" secondItem="bDo-gN-EhO" secondAttribute="bottom" id="ImS-Hu-rrA"/>
-                                    <constraint firstItem="VIn-1n-umb" firstAttribute="top" secondItem="Ab2-h4-WPs" secondAttribute="top" id="cqK-4o-LaF"/>
-                                    <constraint firstAttribute="trailing" secondItem="VIn-1n-umb" secondAttribute="trailing" id="cx6-Cn-dNs"/>
-                                    <constraint firstItem="VIn-1n-umb" firstAttribute="height" secondItem="Ab2-h4-WPs" secondAttribute="height" multiplier="1:3" id="ndV-ZO-7rR"/>
-                                    <constraint firstAttribute="trailing" secondItem="bDo-gN-EhO" secondAttribute="trailing" id="tVv-ZX-hkw"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Ab2-h4-WPs" firstAttribute="top" secondItem="uvQ-RI-LTn" secondAttribute="top" id="BfP-38-aR5"/>
-                            <constraint firstItem="Ab2-h4-WPs" firstAttribute="leading" secondItem="uvQ-RI-LTn" secondAttribute="leading" id="KAG-U4-Rsz"/>
-                            <constraint firstItem="XIw-uE-x1U" firstAttribute="top" secondItem="Ab2-h4-WPs" secondAttribute="bottom" id="VwP-6E-xYv"/>
-                            <constraint firstAttribute="trailing" secondItem="Ab2-h4-WPs" secondAttribute="trailing" id="rvH-0u-9zo"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tQ0-WB-W0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="841" y="306"/>
         </scene>
     </scenes>
     <resources>
