@@ -418,6 +418,9 @@
                             <constraint firstItem="vjN-nQ-HLy" firstAttribute="top" secondItem="3w9-4r-0qh" secondAttribute="bottom" id="yVb-fa-aAA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profilePic" destination="FFP-OA-3tV" id="iQR-SM-i1n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
