@@ -873,6 +873,7 @@
                     </view>
                     <connections>
                         <outlet property="button" destination="zZi-XI-QIb" id="iIs-Js-k5b"/>
+                        <outlet property="followNo" destination="aIU-tE-bKl" id="72d-jY-lBf"/>
                         <outlet property="profile" destination="v9D-Hv-Asg" id="YEm-IS-n1L"/>
                         <outlet property="viewsphoto" destination="fog-o0-Dlx" id="nZs-cy-GS6"/>
                     </connections>

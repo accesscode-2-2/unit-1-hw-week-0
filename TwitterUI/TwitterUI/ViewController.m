@@ -16,6 +16,8 @@
 
 @property (nonatomic) BOOL following;
 
+@property (weak, nonatomic) IBOutlet UILabel *followNo;
+
 @end
 
 @implementation ViewController
@@ -46,14 +48,16 @@
     
 }
 
-- (IBAction)buttonImageChanged:(NSString *)sender {
+- (IBAction)buttonImageChanged:(UIButton *)button {
     
     if (self.following) {
         // show the unfollow button
-        [self.button setBackgroundImage:[UIImage imageNamed: @"follow1"] forState:UIControlStateNormal];
+        [button setBackgroundImage:[UIImage imageNamed: @"follow1"] forState:UIControlStateNormal];
+        self.followNo.text = @"100";
     } else {
         // show the follow button
-        [self.button setBackgroundImage:[UIImage imageNamed: @"following"]forState:UIControlStateNormal];
+        [button setBackgroundImage:[UIImage imageNamed: @"following"]forState:UIControlStateNormal];
+        self.followNo.text = @"101";
     }
     
     self.following = !self.following;
