@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,6 +23,15 @@
                                     <constraint firstAttribute="height" constant="125" id="P4S-wO-7BO"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmf-bw-tfX">
+                                <rect key="frame" x="0.0" y="0.0" width="584" height="125"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="topBackgroundImageButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LAX-yp-hwh"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="voq-E6-dQ9" userLabel="BKGRD top">
                                 <rect key="frame" x="0.0" y="125" width="600" height="263"/>
                                 <subviews>
@@ -217,7 +227,7 @@
                                                             <constraint firstAttribute="width" constant="42" id="YtK-cq-y3r"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                         <variation key="default">
                                                             <mask key="constraints">
@@ -252,7 +262,7 @@
                                                             <constraint firstAttribute="width" constant="42" id="obj-H4-I6K"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                         <variation key="default">
                                                             <mask key="constraints">
@@ -296,7 +306,7 @@
                                         <rect key="frame" x="14" y="109" width="566" height="40"/>
                                         <string key="text">Budding IOS developer @c4qnyc @accesscode22. Building bridges. Ecotravel, holistic health, world music, storytelling. We are all one.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -485,15 +495,28 @@
                                     <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_6909-pinkGlow" translatesAutoresizingMaskIntoConstraints="NO" id="STS-Qa-QIg">
                                         <rect key="frame" x="4" y="4" width="67" height="66"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OwX-D2-kVx">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="profilePicButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hwk-82-FvB"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="OwX-D2-kVx" secondAttribute="bottom" id="9Oy-Gu-9al"/>
                                     <constraint firstAttribute="width" constant="75" id="Cx0-CZ-Igo"/>
                                     <constraint firstAttribute="bottom" secondItem="STS-Qa-QIg" secondAttribute="bottom" constant="5" id="JLn-Jt-2wQ"/>
                                     <constraint firstItem="STS-Qa-QIg" firstAttribute="leading" secondItem="x8t-re-UL1" secondAttribute="leading" constant="4" id="Jmf-Uf-E5k"/>
                                     <constraint firstItem="STS-Qa-QIg" firstAttribute="top" secondItem="x8t-re-UL1" secondAttribute="top" constant="4" id="QYu-w3-SuI"/>
                                     <constraint firstAttribute="height" constant="75" id="TaF-bb-q05"/>
                                     <constraint firstAttribute="trailing" secondItem="STS-Qa-QIg" secondAttribute="trailing" constant="4" id="UKD-TV-v1f"/>
+                                    <constraint firstItem="OwX-D2-kVx" firstAttribute="top" secondItem="x8t-re-UL1" secondAttribute="top" id="cjy-FJ-p0E"/>
+                                    <constraint firstItem="OwX-D2-kVx" firstAttribute="leading" secondItem="x8t-re-UL1" secondAttribute="leading" id="e4r-jd-Eaj"/>
+                                    <constraint firstAttribute="trailing" secondItem="OwX-D2-kVx" secondAttribute="trailing" id="yzD-Fd-Zf1"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ieu-Ux-7Mg" userLabel="BKGRD mid">
@@ -549,8 +572,10 @@
                             <constraint firstItem="vQ8-MC-Lba" firstAttribute="centerY" secondItem="aOE-hk-BlP" secondAttribute="centerY" id="07v-TD-R3l"/>
                             <constraint firstItem="MAY-T1-flT" firstAttribute="top" secondItem="Ieu-Ux-7Mg" secondAttribute="bottom" id="0q4-hJ-SRE"/>
                             <constraint firstItem="vQ8-MC-Lba" firstAttribute="trailing" secondItem="aOE-hk-BlP" secondAttribute="leading" id="368-qu-7A0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hmf-bw-tfX" secondAttribute="trailing" id="9bW-oq-giH"/>
                             <constraint firstAttribute="trailing" secondItem="voq-E6-dQ9" secondAttribute="trailing" id="BCF-cP-CRL"/>
                             <constraint firstItem="voq-E6-dQ9" firstAttribute="top" secondItem="869-lY-h3r" secondAttribute="bottom" id="BDX-xc-l3P"/>
+                            <constraint firstItem="hmf-bw-tfX" firstAttribute="leading" secondItem="869-lY-h3r" secondAttribute="leading" id="Cag-rO-iY6"/>
                             <constraint firstAttribute="trailing" secondItem="Ieu-Ux-7Mg" secondAttribute="trailing" id="HKl-UU-WrA"/>
                             <constraint firstItem="x8t-re-UL1" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="100" id="Jpn-ne-vNl"/>
                             <constraint firstItem="Ieu-Ux-7Mg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="KZB-Hs-YBq"/>
@@ -559,7 +584,9 @@
                             <constraint firstItem="29q-3S-iMV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="VcE-dn-Jv4"/>
                             <constraint firstItem="869-lY-h3r" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="WGz-WP-geE"/>
                             <constraint firstItem="aOE-hk-BlP" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="Wh2-NQ-RiT"/>
+                            <constraint firstItem="voq-E6-dQ9" firstAttribute="top" secondItem="hmf-bw-tfX" secondAttribute="bottom" id="adL-0o-eU2"/>
                             <constraint firstItem="29q-3S-iMV" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="bAg-tu-Rpg"/>
+                            <constraint firstItem="hmf-bw-tfX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="ccs-I8-SJ1"/>
                             <constraint firstItem="EuE-Np-pcp" firstAttribute="top" secondItem="STS-Qa-QIg" secondAttribute="bottom" constant="2" id="cin-rm-ruV"/>
                             <constraint firstAttribute="bottom" secondItem="MAY-T1-flT" secondAttribute="bottom" id="ezE-rC-YPe"/>
                             <constraint firstItem="Ieu-Ux-7Mg" firstAttribute="top" secondItem="voq-E6-dQ9" secondAttribute="bottom" id="gRy-sO-j92"/>
@@ -567,8 +594,14 @@
                             <constraint firstAttribute="trailing" secondItem="869-lY-h3r" secondAttribute="trailing" id="jxc-Yo-NaZ"/>
                             <constraint firstItem="MAY-T1-flT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="m4s-Un-aC6"/>
                             <constraint firstItem="x8t-re-UL1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="ocj-mZ-LTz"/>
+                            <constraint firstItem="hmf-bw-tfX" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="qfC-63-UbI"/>
                             <constraint firstAttribute="trailing" secondItem="aOE-hk-BlP" secondAttribute="trailing" constant="10" id="ulo-TL-I3F"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ccs-I8-SJ1"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="followBackgroundField" destination="EAr-dn-ivq" id="dIY-Rq-ANf"/>
