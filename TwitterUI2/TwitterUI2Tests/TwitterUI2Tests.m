@@ -1,19 +1,19 @@
 //
-//  TwitterUITests.m
-//  TwitterUITests
+//  TwitterUI2Tests.m
+//  TwitterUI2Tests
 //
-//  Created by Michael Kavouras on 7/19/15.
-//  Copyright (c) 2015 Mike Kavouras. All rights reserved.
+//  Created by Eric Sanchez on 7/24/15.
+//  Copyright (c) 2015 Eric Sanchez. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface TwitterUITests : XCTestCase
+@interface TwitterUI2Tests : XCTestCase
 
 @end
 
-@implementation TwitterUITests
+@implementation TwitterUI2Tests
 
 - (void)setUp {
     [super setUp];
