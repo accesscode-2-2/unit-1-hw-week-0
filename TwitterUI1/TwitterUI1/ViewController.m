@@ -1,9 +1,9 @@
 //
 //  ViewController.m
-//  TwitterUI
+//  TwitterUI1
 //
-//  Created by Michael Kavouras on 7/19/15.
-//  Copyright (c) 2015 Mike Kavouras. All rights reserved.
+//  Created by Natalia Estrella on 7/22/15.
+//  Copyright (c) 2015 Natalia Estrella. All rights reserved.
 //
 
 #import "ViewController.h"
