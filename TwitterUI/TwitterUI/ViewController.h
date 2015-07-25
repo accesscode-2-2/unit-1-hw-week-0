@@ -14,6 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *profile;
 
+@property (weak, nonatomic) IBOutlet UIButton *followButton;
 
 @end
 
