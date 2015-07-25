@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import <QuartzCore/QuartzCore.h>
+
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIView *TwitterView;
+@property (weak, nonatomic) IBOutlet UIImageView *TwitterPic;
 
 @end
 
@@ -17,6 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.TwitterView.layer.cornerRadius = 10.0;
+    self.TwitterPic.layer.cornerRadius = 10.0;
+
 }
 
 - (void)didReceiveMemoryWarning {
