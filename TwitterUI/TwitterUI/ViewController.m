@@ -37,7 +37,7 @@
     self.followButton.layer.cornerRadius = self.profile.frame.size.width/10;
     self.followButton.clipsToBounds = YES;
     self.followButton.layer.borderWidth = 1.5f;
-    self.followButton.layer.borderColor=[[UIColor colorWithRed:27.0f/255.0f green:177.0f/255.0f blue:243.0f/255.0f alpha:1.0] CGColor];
+    self.followButton.layer.borderColor=[[UIColor colorWithRed:27.0f/255.0f green:177.0f/255.0f blue:255.0f/255.0f alpha:1.0] CGColor];
     
 
         
