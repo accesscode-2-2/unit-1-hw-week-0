@@ -34,16 +34,13 @@
     self.profile.layer.borderWidth = 5.0f;
     self.profile.layer.borderColor = [UIColor whiteColor].CGColor;
     
-    
-    //Follow Button
-    
-    self.followButton.layer.cornerRadius = self.followButton.frame.size.width/10;
+    self.followButton.layer.cornerRadius = self.profile.frame.size.width/10;
     self.followButton.clipsToBounds = YES;
-    self.followButton.layer.borderWidth = 1.0f;
-    self.followButton.layer.borderColor = [UIColor blueColor].CGColor;
-    [_followButton setTitleEdgeInsets:UIEdgeInsetsMake(0.0, 5.0, 0.0, 0.0)];
-   
+    self.followButton.layer.borderWidth = 1.5f;
+    self.followButton.layer.borderColor=[[UIColor colorWithRed:27.0f/255.0f green:177.0f/255.0f blue:243.0f/255.0f alpha:1.0] CGColor];
     
+
+        
     }
 
 - (void)didReceiveMemoryWarning {
