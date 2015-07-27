@@ -9,6 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *artur;
+@property (weak, nonatomic) IBOutlet UILabel *tweets;
+@property (weak, nonatomic) IBOutlet UIView *Bottom;
 
 @end
 
@@ -16,8 +19,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    self.artur.layer.cornerRadius = 2.0;
+    self.artur.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.artur.layer.borderWidth = 5.0;
+    
+    self.Bottom.layer.borderWidth = 3.0;
+    self.Bottom.layer.borderColor = [UIColor grayColor].CGColor;
+    
+
 }
+- (IBAction)follow:(UIButton *)sender {
+  
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
