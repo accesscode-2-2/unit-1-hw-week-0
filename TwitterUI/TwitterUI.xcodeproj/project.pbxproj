@@ -14,6 +14,13 @@
 		8DD2E0141B5C7F3600C27DE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2E0131B5C7F3600C27DE1 /* Images.xcassets */; };
 		8DD2E0171B5C7F3600C27DE1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2E0151B5C7F3600C27DE1 /* LaunchScreen.xib */; };
 		8DD2E0231B5C7F3600C27DE1 /* TwitterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2E0221B5C7F3600C27DE1 /* TwitterUITests.m */; };
+		AB748A161B66F73C0035B277 /* cover@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AB748A151B66F73C0035B277 /* cover@2x.jpeg */; };
+		AB748A1B1B66F8CD0035B277 /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB748A171B66F8CD0035B277 /* home@2x.png */; };
+		AB748A1C1B66F8CD0035B277 /* messages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB748A181B66F8CD0035B277 /* messages@2x.png */; };
+		AB748A1D1B66F8CD0035B277 /* notifications@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB748A191B66F8CD0035B277 /* notifications@2x.png */; };
+		AB748A1E1B66F8CD0035B277 /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB748A1A1B66F8CD0035B277 /* user@2x.png */; };
+		AB748A201B67053C0035B277 /* location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB748A1F1B67053C0035B277 /* location@2x.png */; };
+		AB748A221B6706530035B277 /* profile@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AB748A211B6706530035B277 /* profile@2x.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,13 @@
 		8DD2E01C1B5C7F3600C27DE1 /* TwitterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD2E0211B5C7F3600C27DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DD2E0221B5C7F3600C27DE1 /* TwitterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterUITests.m; sourceTree = "<group>"; };
+		AB748A151B66F73C0035B277 /* cover@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "cover@2x.jpeg"; path = "../../assets/cover@2x.jpeg"; sourceTree = "<group>"; };
+		AB748A171B66F8CD0035B277 /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home@2x.png"; path = "../../assets/home@2x.png"; sourceTree = "<group>"; };
+		AB748A181B66F8CD0035B277 /* messages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "messages@2x.png"; path = "../../assets/messages@2x.png"; sourceTree = "<group>"; };
+		AB748A191B66F8CD0035B277 /* notifications@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "notifications@2x.png"; path = "../../assets/notifications@2x.png"; sourceTree = "<group>"; };
+		AB748A1A1B66F8CD0035B277 /* user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "user@2x.png"; path = "../../assets/user@2x.png"; sourceTree = "<group>"; };
+		AB748A1F1B67053C0035B277 /* location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "location@2x.png"; path = "../../assets/location@2x.png"; sourceTree = "<group>"; };
+		AB748A211B6706530035B277 /* profile@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "profile@2x.jpeg"; path = "../../assets/profile@2x.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +100,14 @@
 				8DD2E00D1B5C7F3600C27DE1 /* ViewController.h */,
 				8DD2E00E1B5C7F3600C27DE1 /* ViewController.m */,
 				8DD2E0101B5C7F3600C27DE1 /* Main.storyboard */,
+				AB748A211B6706530035B277 /* profile@2x.jpeg */,
+				AB748A1F1B67053C0035B277 /* location@2x.png */,
+				AB748A171B66F8CD0035B277 /* home@2x.png */,
+				AB748A181B66F8CD0035B277 /* messages@2x.png */,
+				AB748A191B66F8CD0035B277 /* notifications@2x.png */,
+				AB748A1A1B66F8CD0035B277 /* user@2x.png */,
 				8DD2E0131B5C7F3600C27DE1 /* Images.xcassets */,
+				AB748A151B66F73C0035B277 /* cover@2x.jpeg */,
 				8DD2E0151B5C7F3600C27DE1 /* LaunchScreen.xib */,
 				8DD2E0061B5C7F3600C27DE1 /* Supporting Files */,
 			);
@@ -199,9 +220,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB748A1B1B66F8CD0035B277 /* home@2x.png in Resources */,
+				AB748A1D1B66F8CD0035B277 /* notifications@2x.png in Resources */,
+				AB748A221B6706530035B277 /* profile@2x.jpeg in Resources */,
 				8DD2E0121B5C7F3600C27DE1 /* Main.storyboard in Resources */,
+				AB748A201B67053C0035B277 /* location@2x.png in Resources */,
 				8DD2E0171B5C7F3600C27DE1 /* LaunchScreen.xib in Resources */,
+				AB748A161B66F73C0035B277 /* cover@2x.jpeg in Resources */,
+				AB748A1C1B66F8CD0035B277 /* messages@2x.png in Resources */,
 				8DD2E0141B5C7F3600C27DE1 /* Images.xcassets in Resources */,
+				AB748A1E1B66F8CD0035B277 /* user@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,8 +376,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TwitterUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -358,8 +388,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TwitterUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -416,6 +448,7 @@
 				8DD2E0281B5C7F3600C27DE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DD2E0291B5C7F3600C27DE1 /* Build configuration list for PBXNativeTarget "TwitterUITests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +457,7 @@
 				8DD2E02B1B5C7F3600C27DE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
