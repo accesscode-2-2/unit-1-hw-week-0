@@ -6,9 +6,16 @@
 //  Copyright (c) 2015 Mike Kavouras. All rights reserved.
 //
 
+#import <QuartzCore/CALayer.h>
+
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UIImageView *profile;
+
+@property (weak, nonatomic) IBOutlet UIButton *followButton;
+
 
 
 @end
