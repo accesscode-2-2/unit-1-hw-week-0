@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface ViewController ()
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *profilePic;
 
 @end
 
@@ -16,7 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.profilePic.layer.cornerRadius = 10;
+    self.profilePic.layer.masksToBounds = YES;
+    
+    self.profilePic.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.profilePic.layer.borderWidth = 3.0f;
+
 }
 
 - (void)didReceiveMemoryWarning {
