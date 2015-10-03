@@ -138,12 +138,14 @@
         NSLog(@"%@", newFollowers);
         
         self.numberOfFollowersLabel.text = newFollowers;
-        
-        
-        
+    
         
     }
 }
+
+
+
+
 
 
 
