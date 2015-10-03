@@ -47,28 +47,28 @@
     [self setupProfilePicture];
     
     //a border and rounded corners to the follow/following button
-    self.followFollowingButton.layer.borderWidth = 1.5;
-    self.followFollowingButton.layer.borderColor =[UIColor colorWithRed:0.424 green:0.710 blue:1 alpha:1].CGColor;
-    self.followFollowingButton.layer.cornerRadius = 5.0;
+    self.followButton.layer.borderWidth = 1.5;
+    self.followButton.layer.borderColor =[UIColor colorWithRed:0.424 green:0.710 blue:1 alpha:1].CGColor;
+    self.followButton.layer.cornerRadius = 5.0;
     
     //a border and rounded corners to the message me button
-    self.messageMeButton.layer.borderWidth = 1.5;
-    self.messageMeButton.layer.borderColor =[UIColor colorWithRed:0.424 green:0.710 blue:1 alpha:1].CGColor;
-    self.messageMeButton.layer.cornerRadius = 5.0;
+    self.messageButton.layer.borderWidth = 1.5;
+    self.messageButton.layer.borderColor =[UIColor colorWithRed:0.424 green:0.710 blue:1 alpha:1].CGColor;
+    self.messageButton.layer.cornerRadius = 5.0;
     
     //color of follow button text
-    self.followTextField.textColor = [UIColor colorWithRed:0.424 green:0.710 blue:1 alpha:1];
+    self.followTextFieldLabel.textColor = [UIColor colorWithRed:0.424 green:0.710 blue:1 alpha:1];
     
     //original top image
     self.topPhotoView.image = [self imageFromURLString:@"http://i.imgur.com/spJpxB0.jpg"];
     //original profile pic
-    self.profilePic.image = [self imageFromURLString:@"https://pbs.twimg.com/profile_images/607610361433300992/OKxM0eFW_400x400.jpg"];
+    self.profilePicture.image = [self imageFromURLString:@"https://pbs.twimg.com/profile_images/2720135430/944811d3ff46f0da908c92758ccb7d8f.jpeg"];
 
 }
 
 - (void)setupProfilePicture {
     self.profilePicFrame.layer.cornerRadius = 5.0;
-    self.profilePic.layer.cornerRadius = 5.0;
+    self.profilePicture.layer.cornerRadius = 5.0;
 }
 
 -(UIImage *)imageFromURLString:(NSString *)string{
@@ -89,17 +89,17 @@
     if (self.tweetsMediaFavorites.selectedSegmentIndex == 0) {
         
         NSLog(@"tweets button tapped");
-        self.notLoadingText.text = @"Tweets aren't loading right now";
+        self.notLoadingTextLabel.text = @"Tweets aren't loading right now";
         
     } else if (self.tweetsMediaFavorites.selectedSegmentIndex == 1) {
         
         NSLog(@" media button tapped");
-        self.notLoadingText.text = @"Media isn't loading right now";
+        self.notLoadingTextLabel.text = @"Media isn't loading right now";
         
     }else if (self.tweetsMediaFavorites.selectedSegmentIndex == 2) {
         
         NSLog(@" favorites button tapped");
-        self.notLoadingText.text = @"Favorites aren't loading right now";
+        self.notLoadingTextLabel.text = @"Favorites aren't loading right now";
         
     }
     
@@ -107,37 +107,37 @@
 
 - (IBAction)followButtonTapped:(UIButton *)sender {
     
-    NSInteger followersInt = [self.numberOfFollowersField.text intValue];
+    NSInteger followersInt = [self.numberOfFollowersLabel.text intValue];
     NSLog(@"%ld", (long)followersInt);
     
-    if ([self.followTextField.text isEqual:@"Following"]) {
-        self.followTextField.textColor = [UIColor colorWithRed:0.424 green:0.710 blue:1 alpha:1];
+    if ([self.followTextFieldLabel.text isEqual:@"Following"]) {
+        self.followTextFieldLabel.textColor = [UIColor colorWithRed:0.424 green:0.710 blue:1 alpha:1];
         self.followBackgroundField.backgroundColor = [UIColor whiteColor];
-        self.followTextField.text = @"Follow";
-        self.followImage.hidden = NO;
-        self.followingImage.hidden = YES;
+        self.followTextFieldLabel.text = @"Follow";
+        self.followImageView.hidden = NO;
+        self.followingImageView.hidden = YES;
         
         followersInt = followersInt - 1;
         
         NSString *newFollowers = [[NSNumber numberWithInteger:followersInt] stringValue];
         NSLog(@"%@", newFollowers);
         
-        self.numberOfFollowersField.text = newFollowers;
+        self.numberOfFollowersLabel.text = newFollowers;
         
     }else {
         
         self.followBackgroundField.backgroundColor = [UIColor colorWithRed:0.424 green:0.710 blue:1 alpha:1];
-        self.followTextField.textColor = [UIColor whiteColor];
-        self.followTextField.text = @"Following";
-        self.followImage.hidden = YES;
-        self.followingImage.hidden = NO;
+        self.followTextFieldLabel.textColor = [UIColor whiteColor];
+        self.followTextFieldLabel.text = @"Following";
+        self.followImageView.hidden = YES;
+        self.followingImageView.hidden = NO;
         
         followersInt = followersInt + 1;
         
         NSString *newFollowers = [[NSNumber numberWithInteger:followersInt] stringValue];
         NSLog(@"%@", newFollowers);
         
-        self.numberOfFollowersField.text = newFollowers;
+        self.numberOfFollowersLabel.text = newFollowers;
         
         
         
@@ -145,44 +145,9 @@
     }
 }
 
-//
-//////The following buttons will change the images but are not working to change the images back...
-//- (IBAction)topBackgroundImageButtonTapped:(UIButton *)sender {
-//    
-//    NSLog(@"top background image button tapped");
-//    
-//    UIImage *strawberries = [self imageFromURLString:@"
-//                             "];
-//    UIImage *costaRica = [self imageFromURLString:@"http://i.imgur.com/h420SYI.jpg"];
-//    
-//    if (self.topPhotoView.image == strawberries) {
-//        
-//        self.topPhotoView.image = costaRica;
-//        
-//    }else {
-//        NSLog(@"reached else");
-//        self.topPhotoView.image = strawberries;
-//    }
-//    
-//}
 
-//- (IBAction)profilePicButtonTapped:(UIButton *)sender {
-//    
-//    NSLog(@"profile pic button tapped");
-//    
-//    UIImage *curvedYellowFruit = [self imageFromURLString:@"http://ihatemygout.com/wp-content/uploads/2009/05/bananas-curved-yellow-fruit-300x212.jpg"];
-//    UIImage *underThePalms = [self imageFromURLString:@"https://pbs.twimg.com/profile_images/607610361433300992/OKxM0eFW_400x400.jpg"];
-//    
-//    if (self.profilePic.image == curvedYellowFruit){
-//        
-//        self.profilePic.image = underThePalms;
-//        
-//    }else {
-//        NSLog(@"reached else");
-//        self.profilePic.image = curvedYellowFruit;
-//        
-//    }
-//}
+
+
 
 
 @end
