@@ -59,11 +59,11 @@
     //color of follow button text
     self.followTextFieldLabel.textColor = [UIColor colorWithRed:0.424 green:0.710 blue:1 alpha:1];
     
-    //original top image
-    self.topPhotoView.image = [self imageFromURLString:@"http://i.imgur.com/spJpxB0.jpg"];
-    //original profile pic
-    self.profilePicture.image = [self imageFromURLString:@"https://pbs.twimg.com/profile_images/2720135430/944811d3ff46f0da908c92758ccb7d8f.jpeg"];
-
+//    //original top image
+//    self.topPhotoView.image = [self imageFromURLString:@"http://i.imgur.com/spJpxB0.jpg"];
+//    //original profile pic
+//    self.profilePicture.image = [self imageFromURLString:@"https://pbs.twimg.com/profile_images/2720135430/944811d3ff46f0da908c92758ccb7d8f.jpeg"];
+//
 }
 
 - (void)setupProfilePicture {
